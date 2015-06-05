@@ -1,0 +1,21 @@
+clc
+clear
+load ScopeData
+% a=Tr(200:end,1);
+% b=Tr(200:end,2);
+
+a=ScopeData(:,1);
+b=ScopeData(:,2);
+%c=comparedata17b(:,3);
+
+% plot(a,c,'-',a,c,'-.rd')
+% plot(a,b,'*',a,c,'-')
+plot(a,b)
+%axis([0  1000  3e5  11e5])
+xlabel('时间（s）')
+ylabel('风轮转矩（N*m）')
+grid on
+
+%big=max(b);
+% error=max(abs(b-1.5e6));
+% error/1e6;

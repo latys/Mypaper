@@ -1,0 +1,17 @@
+function u=loss(r)
+
+% if r>=0 && r<30
+%         u=1;
+% elseif r>=30 && r<60
+%         u=0.9;
+% elseif r>=60 && r<90
+%         u=0.8;
+% elseif r>=90 && r<120
+%         u=0.7;        
+% elseif r>=120
+%         u=0.6;
+% end
+a=1-0.0000175*r^2;
+if a>0.6
+    u=1-0.0000175*r^2;
+elseif a<

@@ -1,0 +1,6 @@
+
+应用结构体函数：
+
+plot(ipower2.time,ipower2.signals.values(:,1),'LineWidth',0.8)
+set(gca,'xtick',[0:20:150])
+set(gca,'ytick',[0:0.2e6:2e6])

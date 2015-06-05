@@ -1,0 +1,37 @@
+CC     = "d:\program files\matlab\r2008a\sys\lcc\bin\lcc.exe"
+LD     = "d:\program files\matlab\r2008a\sys\lcc\bin\lcclnk.exe"
+LIBCMD = "d:\program files\matlab\r2008a\sys\lcc\bin\lcclib.exe"
+CFLAGS = -c -Zp8 -DMATLAB_MEX_FILE -noregistrylookup
+LDFLAGS = -s -dll -L"d:\program files\matlab\r2008a\sys\lcc\lib"
+LIBFLAGS = 
+
+OBJECTS = \
+	"new_lv_trygenerator_mode1_sfun.obj"\
+	"new_lv_trygenerator_mode1_sfun_registry.obj"\
+	"c1_new_lv_trygenerator_mode1.obj"\
+	"c2_new_lv_trygenerator_mode1.obj"\
+	"lccstub.obj"\
+	"d:\program files\matlab\r2008a\sys\lcc\mex\lccdef.def"\
+	"d:\program files\matlab\r2008a\stateflow\c\debugger\lib\win32\sfc_debuglcc.lib"\
+	"d:\program files\matlab\r2008a\stateflow\c\mex\lib\win32\sfc_mexlcc.lib"\
+	"d:\program files\matlab\r2008a\extern\lib\win32\lcc\libmex.lib"\
+	"d:\program files\matlab\r2008a\extern\lib\win32\lcc\libmx.lib"\
+	"d:\program files\matlab\r2008a\extern\lib\win32\lcc\libfixedpoint.lib"\
+	"d:\program files\matlab\r2008a\extern\lib\win32\lcc\libut.lib"\
+	"d:\program files\matlab\r2008a\toolbox\dspblks\lib\win32\dsp_dyn_rt_lcc.lib"\
+
+INCLUDE_PATH= -I"d:\program files\matlab\r2008a\sys\lcc\include"  -I"d:\program files\matlab\r2008a\extern\include"  -I"d:\program files\matlab\r2008a\simulink\include"  -I"d:\program files\matlab\r2008a\stateflow\c\mex\include"  -I"d:\program files\matlab\r2008a\stateflow\c\debugger\include"  -I"d:\program files\matlab\r2008a\toolbox\eml\lib\dsp"  -I"f:\lvturbinesimulink\slprj\_sfprj\new_lv_trygenerator_mode1\_self\sfun\src"  -I"f:\lvturbinesimulink" 
+ 
+
+new_lv_trygenerator_mode1_sfun.mexw32 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o new_lv_trygenerator_mode1_sfun.mexw32 @new_lv_trygenerator_mode1_sfun.lmko
+new_lv_trygenerator_mode1_sfun.obj :	"new_lv_trygenerator_mode1_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "new_lv_trygenerator_mode1_sfun.c"
+new_lv_trygenerator_mode1_sfun_registry.obj :	"new_lv_trygenerator_mode1_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "new_lv_trygenerator_mode1_sfun_registry.c"
+c1_new_lv_trygenerator_mode1.obj :	"c1_new_lv_trygenerator_mode1.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_new_lv_trygenerator_mode1.c"
+c2_new_lv_trygenerator_mode1.obj :	"c2_new_lv_trygenerator_mode1.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c2_new_lv_trygenerator_mode1.c"
+lccstub.obj :	"d:\program files\matlab\r2008a\sys\lcc\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "d:\program files\matlab\r2008a\sys\lcc\mex\lccstub.c"

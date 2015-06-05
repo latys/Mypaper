@@ -1,0 +1,25 @@
+clc
+clear
+load comparedata
+% a=Tr(200:end,1);
+% b=Tr(200:end,2);
+
+a=comparedata(:,1);
+b=comparedata(:,2);
+c=comparedata(:,3);
+
+[m,n]=size(a);
+ISE=0;
+IEA=0;
+%计算统一变桨距的性能指标
+for i=250:m
+    ISE=ISE+((1.5e6-a(i))/1e6)^2;
+    i=i+1;
+end
+ISE
+
+for j=250:m
+    IEA=IEA+abs(1.5e6-b(i))/1e6;
+end
+IEA
+

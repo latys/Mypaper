@@ -1,0 +1,19 @@
+function [beta1,beta2,beta3]=xishu(rt,beta,t)
+
+n=0.25;
+h=62.5;
+R=38.5;
+
+angle=rt*t-2*pi*floor((rt*t)/(2*pi));%seitan½Ç
+
+Ka=(1+0.75*R/h*sin(angle))^(2*n);
+Kb=(1+0.75*R/h*sin(angle+2/3*pi))^(2*n);
+Kc=(1+0.75*R/h*sin(angle+4/3*pi))^(2*n);
+
+k1=3*Ka/(Ka+Kb+Kc);
+k2=3*Kb/(Ka+Kb+Kc);
+k3=3*Kc/(Ka+Kb+Kc);
+
+beta1=beta*k1;
+beta2=beta*k2;
+beta3=beta*k3;

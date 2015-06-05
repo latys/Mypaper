@@ -1,0 +1,31 @@
+clc
+clear
+load paper_goodoutput
+load for_paper_reference
+% a=Tr(200:end,1);
+% b=Tr(200:end,2);
+
+a=for_paper_reference(250:end,2);
+b=paper_goodoutput(250:end,2);
+%c=comparedata17b(:,3);
+
+% plot(a,c,'-',a,c,'-.rd')
+% plot(a,b,'*',a,c,'-')
+% plot(a,b)
+% axis([0  120  1.1e6  1.55e6])
+% xlabel('时间（s）')
+% ylabel('风电机组功率输出（MW）')
+% grid on
+
+%big=max(b);
+[m,n]=size(a);
+error=zeros(m,n);
+m;
+n;
+for i=1:m
+    error(i,1)=(abs(a(i,1)-b(i,1))/a(i,1))*100;
+end
+big=max(error)
+
+
+

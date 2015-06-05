@@ -1,0 +1,21 @@
+clc
+clear
+load genspeed
+% a=Tr(200:end,1);
+% b=Tr(200:end,2);
+
+a=rotorspeed(:,1);
+b=rotorspeed(:,2);
+%c=comparedata17b(:,3);
+
+% plot(a,c,'-',a,c,'-.rd')
+% plot(a,b,'*',a,c,'-')
+plot(a,b)
+axis([0  1000  1.5  2.3])
+xlabel('时间（s）')
+ylabel('风轮输出转速（rad/s）')
+grid on
+
+%big=max(b);
+% error=max(abs(b-1.5e6));
+% error/1e6;
