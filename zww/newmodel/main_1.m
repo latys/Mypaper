@@ -11,7 +11,7 @@ Exp_Lamda=7.9;
 R=38.5;
 
 global init_x0;
-init_x0=[0,8]';
+init_x0=[1,1]';
 
 global Jr ng Jg rho Kr Kg B Jt Kt;
 Jr=4*10^6;
