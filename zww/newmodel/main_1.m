@@ -3,7 +3,7 @@ close all
 clc
 
 global stop_time step_time;
-stop_time=30;
+stop_time=100;
 step_time=0.01;
 
 global Exp_Lamda R;
@@ -11,7 +11,7 @@ Exp_Lamda=7.9;
 R=38.5;
 
 global init_x0;
-init_x0=[1,1]';
+init_x0=[0,1]';
 
 global Jr ng Jg rho Kr Kg B Jt Kt;
 Jr=4*10^6;
@@ -34,7 +34,7 @@ C5=-12.5;
 global mean_wind;
 mean_wind=10;
 
-alpha=0.2; %执行器参数确定值
+alpha=2; %执行器参数确定值
 
 global beta  mu;
 beta=0;
