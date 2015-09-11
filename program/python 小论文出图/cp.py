@@ -41,7 +41,7 @@ x=np.linspace(0,7.98,100)
 y=np.linspace(0.427,0.425,100)
 plt.plot(x,y,'--',color="black")
 
-plt.savefig('cp.svg',dpi=600,format='svg')
+plt.savefig('cp.png',dpi=600,format='png')
     #plt.savefig('power.png', dpi=600)
 plt.show()
 
