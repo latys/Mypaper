@@ -174,13 +174,14 @@ if model.type(1)=='c', % 'classification'
     %
     % plotting the datapoints
     %
-    legstr{1} = 'Classifier';
+     legstr{1} = '分类器';
+   % legstr{1} = 'Classifier';
     markers = {'*','s','+','o','x','d','v','p','h'};
     for c=1:length(codebook_cat),
       s = find(osvY(:,1)==codebook_cat(c));
 
       plot(osvX(s,princdim(1)),osvX(s,princdim(2)) ,[markers{1+mod(c-1,9)} 'k']);
-      legstr{c+1} = ['class ' num2str(c)];
+      legstr{c+1} = ['类别 ' num2str(c)];
     end
     eval('legend(legstr{1:end});');
     
