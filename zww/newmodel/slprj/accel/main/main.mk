@@ -78,7 +78,7 @@ S_FUNCTIONS_LIB    =
 SOLVER             = ode4.c
 NUMST              = 2
 TID01EQ            = 1
-NCSTATES           = 15
+NCSTATES           = 3
 MEM_ALLOC          = RT_STATIC
 BUILDARGS          =  GENERATE_REPORT=0
 MEXEXT             = mexw32

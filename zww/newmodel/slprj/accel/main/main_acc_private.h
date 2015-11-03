@@ -30,6 +30,4 @@
 #endif
 #endif
 #endif
-extern real_T rt_urand_Upu32_Yd_f_pw_snf ( uint32_T * u ) ; extern real_T
-rt_nrand_Upu32_Yd_f_pw_snf ( uint32_T * u ) ;
 #endif

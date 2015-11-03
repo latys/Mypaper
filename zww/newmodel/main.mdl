@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.35"
+    ComputedModelVersion    "1.37"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [284.0, 36.0, 1366.0, 724.0]
+      Location		      [-8.0, -8.0, 1456.0, 876.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1118.0, 524.0]
-	ZoomFactor		[0.5]
-	Offset			[-66.540476190476511, 305.4047619047621]
+	Extents			[1211.0, 697.0]
+	ZoomFactor		[1.0]
+	Offset			[153.6633871947011, 130.80476190476156]
       }
     }
   }
@@ -77,9 +77,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Administrator"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Aug 21 09:41:46 2015"
-  RTWModifiedTimeStamp	  362050394
-  ModelVersionFormat	  "1.%<AutoIncrement:35>"
+  LastModifiedDate	  "Tue Nov 03 16:23:52 2015"
+  RTWModifiedTimeStamp	  368468515
+  ModelVersionFormat	  "1.%<AutoIncrement:37>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -920,7 +920,7 @@ Model {
   }
   System {
     Name		    "main"
-    Location		    [284, 36, 1650, 760]
+    Location		    [-8, -8, 1448, 868]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -932,7 +932,7 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "50"
+    ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "40"
     Block {
@@ -1192,7 +1192,6 @@ Model {
       VariableName	      "Eomega"
       MaxDataPoints	      "inf"
       SampleTime	      "-1"
-      SaveFormat	      "Timeseries"
     }
     Block {
       BlockType		      ToWorkspace
@@ -1245,35 +1244,6 @@ Model {
       Position		      [900, 627, 960, 663]
       ZOrder		      8
       Denominator	      "[alpha 1]"
-    }
-    Block {
-      BlockType		      Reference
-      Name		      "Wind Model SB-1"
-      SID		      "37"
-      Ports		      [1, 1]
-      Position		      [355, 337, 520, 393]
-      ZOrder		      36
-      BackgroundColor	      "cyan"
-      LibraryVersion	      "3.0.19"
-      LinkData {
-	BlockName		"Unit Delay"
-	DialogParameters {
-	  SampleTime		  "-1"
-	}
-	BlockName		"Unit Delay1"
-	DialogParameters {
-	  SampleTime		  "-1"
-	}
-      }
-      FontSize		      12
-      FontWeight	      "bold"
-      SourceBlock	      "wt_blockset_v3/Mechanical\nComponents/Wind Model SB-1"
-      SourceType	      "Wind Model using Simulink Band-limited white noise generator"
-      D_rotor		      "72"
-      v_mean		      "10"
-      roughness		      "300"
-      turb_int		      "12"
-      T_sample		      "0.01"
     }
     Block {
       BlockType		      MATLABFcn
@@ -1415,17 +1385,9 @@ Model {
       SrcPort		      2
       Points		      [104, 0]
       Branch {
-	Points			[0, -70]
-	Branch {
-	  Points		  [0, -301; -1099, 0; 0, 91]
-	  DstBlock		  "Wind Model SB-1"
-	  DstPort		  1
-	}
-	Branch {
-	  Points		  [-464, 0]
-	  DstBlock		  "Sum2"
-	  DstPort		  2
-	}
+	Points			[0, -70; -464, 0]
+	DstBlock		"Sum2"
+	DstPort			2
       }
       Branch {
 	Points			[0, 75]
@@ -1446,20 +1408,6 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Wind Model SB-1"
-      SrcPort		      1
-      Points		      [39, 0]
-      Branch {
-	Points			[0, 51; 446, 0; 0, 189]
-	DstBlock		"Mux4"
-	DstPort			1
-      }
-      Branch {
-	DstBlock		"To Workspace5"
-	DstPort			1
-      }
-    }
-    Line {
       SrcBlock		      "Delay"
       SrcPort		      1
       DstBlock		      "Mux2"
@@ -1477,6 +1425,21 @@ Model {
       SrcPort		      1
       DstBlock		      "Sum2"
       DstPort		      1
+    }
+    Line {
+      SrcBlock		      "wind"
+      SrcPort		      1
+      Points		      [162, 0]
+      Branch {
+	Points			[0, -190]
+	DstBlock		"To Workspace5"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 38; 170, 0; 0, 12]
+	DstBlock		"Mux4"
+	DstPort			1
+      }
     }
     Annotation {
       SID		      "19"

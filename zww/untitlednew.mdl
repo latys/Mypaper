@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.10"
+    ComputedModelVersion    "1.11"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -41,7 +41,7 @@ Model {
       $ObjectID		      3
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [1358.0, -8.0, 1382.0, 784.0]
+      Location		      [-292.0, 162.0, 1382.0, 784.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		4
@@ -65,9 +65,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1207.0, 605.0]
-	ZoomFactor		[0.8]
-	Offset			[-272.62500027418128, -32.07187661081548]
+	Extents			[1137.0, 605.0]
+	ZoomFactor		[0.6]
+	Offset			[-425.19047619047603, -276.58095238095245]
       }
     }
   }
@@ -75,11 +75,11 @@ Model {
   Creator		  "dujiexian"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "dujiexian"
+  LastModifiedBy	  "Administrator"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun May 31 16:56:55 2015"
-  RTWModifiedTimeStamp	  354814091
-  ModelVersionFormat	  "1.%<AutoIncrement:10>"
+  LastModifiedDate	  "Tue Nov 03 22:27:28 2015"
+  RTWModifiedTimeStamp	  368484923
+  ModelVersionFormat	  "1.%<AutoIncrement:11>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -849,7 +849,7 @@ Model {
   }
   System {
     Name		    "untitlednew"
-    Location		    [1358, -8, 2740, 776]
+    Location		    [-292, 162, 1090, 946]
     Open		    on
     ModelBrowserVisibility  on
     ModelBrowserWidth	    200
@@ -861,9 +861,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "80"
+    ZoomFactor		    "60"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "32"
+    SIDHighWatermark	    "34"
     Block {
       BlockType		      Clock
       Name		      "Clock"
