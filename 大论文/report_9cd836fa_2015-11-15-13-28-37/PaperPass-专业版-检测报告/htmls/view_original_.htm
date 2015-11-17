@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>PaperPass 最权威中文论文抄袭检测系统</title>
+<style type="text/css">
+<!--
+user_icon {
+color: #FFFFFF;
+}
+html
+{
+overflow-x:hidden;
+overflow-y:auto;
+}
+body,td,th {
+font-family: "微软雅黑";
+font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "宋体";
+}
+p{
+margin-bottom:10px;
+}
+demo_padding {
+line-height: 30px;
+}
+.zhengwen {
+padding-right: 15px;
+padding-left: 5px;
+padding-bottom:100px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+}
+.zhengwencenter {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+text-align:center
+}
+.neikuang {
+background-color: #EBEBEB;
+border: 1px solid #999999;
+padding-right: 10px;
+padding-left: 10px;
+margin-top:10px;
+margin-left:25px;
+width:300px;
+}
+.shubu{
+height: 20px;
+width: 20px;
+margin-left:25px;
+background-color: #FFFFFF;
+border: 1px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+color: #666666;
+}
+a.red:link {color:#FF0000}
+a.red:visited {color:#FF0000}
+a.red:hover {color:#000000}
+a.red:active {color:#000000}
+
+a.orange:link {color:#FF6600}
+a.orange:visited {color:#FF6600}
+a.orange:hover {color:#000000}
+a.orange:active {color:#000000}
+
+a.dark:link {color:#666666}
+a.dark:visited {color:#666666}
+a.dark:hover {color:#000000}
+a.dark:active {color:#000000}
+
+a.pagelink:hover {color:#000000}
+a.pagelink:active {color:#000000}
+
+.green{color:#008000}
+.gray{color:#666666}
+.red{color:#FF0000}
+.orange{color:#FF6600}
+a{TEXT-DECORATION:none}
+
+-->
+</style>
+</head>
+<body>
+
+
+<div class="zhengwen">
+
+<span style="margin-left:25px"></span>第三章风力发电机组建模与控制方法研究风力机模型的搭建对整个风机系统的动态特性和控制规律的研究有着极为重要的意义，
+<br><br>
+<span style="margin-left:25px"></span>建立的风机模型应能够描述整个机组的所有基本特性，而且还要适合控制器的控制仿真。变桨距风力机模型的基本结构应包括风气动系统、机械系统、电气系统及控制系统等模型。其中气动系统建模主要包括风速模块，将风能转换为机械能，机械系统主要包括传动模块，电气系统主要包括发电机模块，主要任务为将传动轴的机械能转换为电能。最后需要控制系统调节桨距角或转矩进行控制策略调整，从而实现控制目标。图3.1  风力发电机组基本构成
+<br><br>
+<span style="margin-left:25px"></span>3.1风力发电机组建模
+<br><br>
+<span style="margin-left:25px"></span>3.1.1风速模型
+<br><br>
+<span style="margin-left:25px"></span>风是风机发电的原动力，风力机的动态特性与风况息息相关。
+<br><br>
+<span style="margin-left:25px"></span>建立接近自然风的风速模型，是验证风力机模型精确性和控制策略有效性的关键。文献[29，30]认为风速的变化包括方向和大小，其时空变化都具有随机性和时变性，认为自然风是基本风、渐变风、阵风和随机风四部分矢量和。文献[31]将风能看成是一个稳态的随机过程，建立了 Vander Hoven风速模型，这种模型能很好地反映风的中长期变化特性，但不能反映风在短时间内的变化。文献[32]将风速的紊流分量特性看作与某段时间内的平均风速有关，建立的Von Karman风速模型很好地模拟风在短时间内的变化特性。本课题选用风速典型的四分量模型，即由基本风 、阵风 、渐变风 和随机风 叠加而成。
+<br><br>
+<span style="margin-left:25px"></span>基本风 是一直存在于自然界中的，用来反映风场中平均风速的变化，通过威布尔分布函数可以近似得到
+<br><br>
+<span style="margin-left:25px"></span>(3.1)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为威布尔分布的尺度参数， 为伽玛函数， 为威布尔分布的形状参数。
+<br><br>
+<span style="margin-left:25px"></span>在一般情况下基本风不会随着时间变化，一般可以用常值在仿真中来模拟。阵风 用来描述在某个时间段内风突然变化的现象，其数学公式可以表示为：
+<br><br>
+<span style="margin-left:25px"></span>(3.2)
+<br><br>
+<span style="margin-left:25px"></span>其中， ， 为阵风风速( )， 为阵风启动时间( )， 为阵风周期( )， 为阵风的最大风速( )。
+<br><br>
+<span style="margin-left:25px"></span>渐变风 可以随着时间发生缓慢的变化，其数学公式可以表示如下：
+<br><br>
+<span style="margin-left:25px"></span>(3.3)
+<br><br>
+<span style="margin-left:25px"></span>其中， ， 为渐变风速( )， 为渐变风起止时间( )， 为渐变保持时间( )。
+<br><br>
+<span style="margin-left:25px"></span>随机风 的变化具有不确定性，它受到多种因素的影响，包括地表粗糙系数、相对高度的风速及各种外来扰动等，其数学公式可以表示如下：
+<br><br>
+<span style="margin-left:25px"></span>(3.4)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为频谱取样点数， ，取样频率 ， 为地表粗糙系数， 为扰动范围， 为相对高度的平均风速， 为在0~ 之间均匀分布的随机变量。
+<br><br>
+<span style="margin-left:25px"></span>本文采用的风速模型为基于 Matlab/ Simulink的风力发电建模系统中的风速模块[59]，与四分量风速模型效果相比，
+<br><br>
+<span style="margin-left:25px"></span>该风速模型考虑到了塔影效应，更加接近风场的实际风速。使用该风速模块分别对平均风速为5m/s、10m/s和15m/s三种风况进行仿真，仿真时间为10分钟，即600秒。
+<br><br>
+<span style="margin-left:25px"></span>仿真结果如图3.3所示：图3.3  风速曲线
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，风速在平均风速附近小范围震荡，误差不超过12%，变化速率有的部分比较平缓，有的部分会出现较大地变化，符合实际状况下风速的突变性。
+<br><br>
+<span style="margin-left:25px"></span>该模块比较准确地模拟了三种平均风速下的风况，表明该模块可以模拟多种风速，具有较广的适用性且可以较好地反映出风场中的实际风速。因此可以使用该风速模块模拟风速来验证之后设计的控制策略和风机模型。3.1.2传动链模型
+<br><br>
+<span style="margin-left:25px"></span>风力发电机组的传动系统一般由风轮转子、高速轴、齿轮箱、低速轴和发电机转子等部分组成。
+<br><br>
+<span style="margin-left:25px"></span>在研究传动系统时，一般根据轴系的等效和建模方法的不同将传动系统分为单质量块模型、二质量块模型和三质量块模型三种。考虑到模型的复杂度，在一般研究中通常使用二质量块模型或单质量块模型。1)二质量块模型
+<br><br>
+<span style="margin-left:25px"></span>二质量块模型可以通过三质量块模型折算过来，齿轮箱的转动惯量可以折算到风轮和发电机中，
+<br><br>
+<span style="margin-left:25px"></span>低速轴的转矩和转速可以折算到高速轴部分，齿轮箱以及高低速轴的弹性作用和转动阻尼作用可以等效成一个弹性和阻尼环节。二质量块模型如图3.7所示。图3.7  风力发电传动系统二质量块模型
+<br><br>
+<span style="margin-left:25px"></span>当风轮转速达到一定速度后，在启动转矩和低速轴转矩的相互作用下，风轮开始转动，其作用关系如(3.5)所示：
+<br><br>
+<span style="margin-left:25px"></span>(3.5)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为风轮转动惯量( )；
+<br><br>
+<span style="margin-left:25px"></span> 为风轮阻尼系数( )； 为低速轴转矩( )，在其中发挥制动作用，用公式表示如下所示：(3.6)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为低速轴阻尼系数( )；
+<br><br>
+<span style="margin-left:25px"></span> 为风轮旋转位置角(°)； 为低速轴旋转位置角； 为低速轴刚度系数 ( )； 为风轮旋转角速度( )； 为低速轴旋转角速度( )。低速轴转矩以齿轮箱转速比的倍率传输到高速轴。
+<br><br>
+<span style="margin-left:25px"></span>(3.7)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为高速轴转矩( )；
+<br><br>
+<span style="margin-left:25px"></span> 为齿轮箱齿速比。发电机的旋转位置角、转速与低速轴旋转位置角、转速关系如下：
+<br><br>
+<span style="margin-left:25px"></span>(3.8)
+<br><br>
+<span style="margin-left:25px"></span>(3.9)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为发电机的旋转位置角(°)；
+<br><br>
+<span style="margin-left:25px"></span> 为发电机转速( )。在风力发电机组的实际运行过程中，齿轮箱会造成一定的能量的损耗（约相当于0.5%的额定功率），
+<br><br>
+<span style="margin-left:25px"></span>考虑到齿轮箱造成的损耗，则输出的高速轴转矩的表达式应该在公式(3.7)的基础上乘以一个效率系数。(3.10)
+<br><br>
+<span style="margin-left:25px"></span>假设风力发电机组是在理想的工作条件下运行的，即运行过程中没有损耗，那么由公式(3.7)、(3.8)和(3.9)可知：
+<br><br>
+<span style="margin-left:25px"></span>(3.11)
+<br><br>
+<span style="margin-left:25px"></span>发电机在高速轴转矩和电磁转矩的相互作用工作，其表达式为：
+<br><br>
+<span style="margin-left:25px"></span>(3.12)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为发电机转动惯量( )；
+<br><br>
+<span style="margin-left:25px"></span> 为发电机阻尼系数( )； 为发电机电磁转矩( )。2) 单质量块模型
+<br><br>
+<span style="margin-left:25px"></span>单质量块模型可由二质量块模型简化而来，其目标是降低传动系统模型复杂度，将研究侧重点放在风力发电机组的电气部分的动态特性上。
+<br><br>
+<span style="margin-left:25px"></span>单质量块模型如图3.8所示。图3.8  风力发电传动系统单质量块模型
+<br><br>
+<span style="margin-left:25px"></span>风轮的转动惯量和发电机的转动惯量反馈到输出轴上，假设轴为理想刚度，忽略转动系统的刚度和阻尼，那么：
+<br><br>
+<span style="margin-left:25px"></span>(3.13)
+<br><br>
+<span style="margin-left:25px"></span>(3.14)
+<br><br>
+<span style="margin-left:25px"></span>综合公式(3.11)、(3.13)和(3.14)，可以得到
+<br><br>
+<span style="margin-left:25px"></span>(3.15)
+<br><br>
+<span style="margin-left:25px"></span>因此，公式(3.5)和(3.12)可描述为：
+<br><br>
+<span style="margin-left:25px"></span>(3.16)
+<br><br>
+<span style="margin-left:25px"></span>(3.17)
+<br><br>
+<span style="margin-left:25px"></span>公式(3.17)与 相乘后再与公式(3.6)求和可得到下式：
+<br><br>
+<span style="margin-left:25px"></span>(3.18)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为发电机转矩( )，且存在关系式：
+<br><br>
+<span style="margin-left:25px"></span> ； ； 。3.1.3变桨距机构模型
+<br><br>
+<span style="margin-left:25px"></span>当风速超过额定风速时，为避免风电机组受到损坏，保证输出功率稳定在额定功率，需要启动变桨执行机构限制风力发电机组的风能捕获。
+<br><br>
+<span style="margin-left:25px"></span>根据风速大小得出桨距角，并输出桨距角控制指令，经控制系统调节，由执行机构驱动叶片变桨，数学模型如公式(3.19)，拉式变换如公式(3.30)：(3.19)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为桨距角的参考值(°)；
+<br><br>
+<span style="margin-left:25px"></span> 为实际输出的桨距角值(°)； 为时间常数。(3.20)
+<br><br>
+<span style="margin-left:25px"></span>由于控制系统和驱动系统会存在一定的计算延迟和条件延迟等情况，所以变桨执行机构会出现一定程度的延迟响应。
+<br><br>
+<span style="margin-left:25px"></span>独立变桨控制中，每个叶片的桨距角是有控制系统独立控制的，控制机构会根据每个桨叶的受风情况，
+<br><br>
+<span style="margin-left:25px"></span>得到权系数，权系数表达式可由经验得到，可表示为为：(3.21)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为叶片长度；
+<br><br>
+<span style="margin-left:25px"></span> 为叶片平均风速点的等效长度； 为风力发电机组机舱处的位置与轮毂中心处的距离到地面的高度； 为叶片 的方位角。经过权系数分配后，计算得到桨距角值
+<br><br>
+<span style="margin-left:25px"></span>(3.22)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为统一变桨的桨距角。
+<br><br>
+<span style="margin-left:25px"></span>3.1.4发电机模型
+<br><br>
+<span style="margin-left:25px"></span>风力发电的过程是风能转化成机械能，再由机械能转化成电能。
+<br><br>
+<span style="margin-left:25px"></span>其中，风力机完成了风能到机械能的转化，发电机完成了机械能到电能的转化，在能量转化过程中，发电机扮演着极其重要的角色，它不仅关系到输出电能的质量，还影响了风力发电机组的效率。发电机选择时需要考虑其稳定可靠性和使用寿命以及是否能够适应风况的变化等。目前在变桨控制中主要采用异步发电机，异步发电机通过改变定子电压来改变发电机力矩，
+<br><br>
+<span style="margin-left:25px"></span>本文对异步发电机的模型进行简化，其数学模型可表示为为[63]：(3.23)
+<br><br>
+<span style="margin-left:25px"></span>(3.24)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为发电机极对数；
+<br><br>
+<span style="margin-left:25px"></span> 为相对数； 为电网电压(V)； 为修正系数； 为发电机转速( )； 为风轮转速( )； 为发电机同步转速( )； 和 分别为定子绕组电阻和漏抗( )； 和 分别为转子绕组电阻和漏抗( )。3.2风力发电机组控制方法
+<br><br>
+<span style="margin-left:25px"></span>对风力发电控制系统模型的非线性主要体现在风轮所捕获的风能大小上，风力机实际捕获的
+<br><br>
+<span style="margin-left:25px"></span>机械功率与空气密度、风速、风轮扫掠面积、风能利用系数等因素相关。由此不难看出风速的随机性及风能利用系数的复杂性使得控制系统的非线性模型难于建立。因此需要根据被控对象的物理特征，以及相应的基础理论建立出能够反映被控对象特征的非线性模型。3.2.1状态反馈控制
+<br><br>
+<span style="margin-left:25px"></span>状态反馈是现代控制理论中的一种基本控制方式，在经典控制理论中通常采用输出反馈，
+<br><br>
+<span style="margin-left:25px"></span>状态反馈相比于输出反馈，优点在于能够提供更丰富的状态信息和可供选择的自由度，可以使系统容易获得更好的性能，故得到了广泛地使用。状态反馈是将系统的状态变量乘以一个反馈系数，然后将结果反馈到输入端与参考输入公共作用作为输入，形成新的控制率。
+<br><br>
+<span style="margin-left:25px"></span>下图是状态反馈的系统结构图：添加图片
+<br><br>
+<span style="margin-left:25px"></span>图中为状态反馈的基本形式。
+<br><br>
+<span style="margin-left:25px"></span>其中是状态变量的估计值，K是一个常系数矩阵（比例环节），通常称为反馈增益矩阵。如果原系统是定常线性系统(A，B，C)，则在引入状态反馈K以后，系统就化成(A-BK，B，C)。状态反馈把系统的动态矩阵A变成A-BK，但不影响输入矩阵B和输出矩阵C。考虑线性时不变系统：
+<br><br>
+<span style="margin-left:25px"></span>(3.25)
+<br><br>
+<span style="margin-left:25px"></span>为使系统稳定，设计状态反馈控制器 ，则控制器须满足开环系统保持线性，且闭环系统
+<br><br>
+<span style="margin-left:25px"></span>(3.26)
+<br><br>
+<span style="margin-left:25px"></span>的原点是渐进稳定的。
+<br><br>
+<span style="margin-left:25px"></span>故当矩阵 是Hurwitz矩阵时便可满足闭环系统渐进稳定。因此，状态反馈稳定问题就转化成了设计一个矩阵 ，满足矩阵 的特征值位于复平面的左半平面。由现代控制理论可知，若矩阵对 是可控的，则可以任意设计 的特征值。即使 的某些特征值不可控，只要不可控的特征值具有负实部，系统仍然有可能达到稳定。目前，随着状态观测器理论和状态估计方法的发展（特别是由于卡尔曼-布什滤波方法的出现），
+<br><br>
+<span style="margin-left:25px"></span>在很多情况下已不难获得状态变量的良好实时估计值，状态反馈方法已进入了实用阶段。3.2.2PID控制
+<br><br>
+<span style="margin-left:25px"></span>PID控制，即比例积分微分控制，是由比例单元、积分单元和微分单元三部分组成。
+<br><br>
+<span style="margin-left:25px"></span>PID控制器由于结构简单、控制效果理想，在工业系统中得到了广泛地应用[64]。有些应用场景不需要使用所有的单元，因此PID控制器又可变化为PI控制器、PD控制器、P控制器或I控制器。PID算法可以表示为：(3.27)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为比例系数；
+<br><br>
+<span style="margin-left:25px"></span> 为积分时间常数； 为微分时间常数； 为积分系数； 为微分系数。1) 比例环节
+<br><br>
+<span style="margin-left:25px"></span>比例控制是控制器的输出与输入误差信号成比例关系，当仅有比例控制时系统输出存在稳态误差。
+<br><br>
+<span style="margin-left:25px"></span>比例环节的作用是成比例的反应系统反馈信号与设定之间的偏差，通过给出相应的控制指令来减小系统的偏差。比例系数 的作用是加快系统的响应速度，提高系统的调节精度。
+<br><br>
+<span style="margin-left:25px"></span>比例系数的设置会对系统带来一定的影响，如果比例系数过大，虽然会加快系统的响应速度，减小稳态误差，但是容易产生超调，带来系统的不稳定；如果比例系数过小，会影响控制精度使控制品质降低，系统的响应时间变长，增加系统的调节时间，导致系统的动态特性和静态特性都变差，选取合理的比例系数十分必要。2) 积分环节
+<br><br>
+<span style="margin-left:25px"></span>积分环节的作用是消除静差，使系统的误差减小到零。
+<br><br>
+<span style="margin-left:25px"></span>积分程度的强弱是有积分时间常数 来确定， 的值越大积分作用效果越弱，反之 的值越小积分作用效果越强。如果积分作用过强，在响应过程的初期会导致积分饱和现象的产生，使系统响应过程有很大的超调量。3) 微分环节
+<br><br>
+<span style="margin-left:25px"></span>微分环节是起到提前预判的作用，是通过检测输出信号与给定之间的差值变化，来调节系统的控制量，
+<br><br>
+<span style="margin-left:25px"></span>使系统的动态性能得到改善，微分环节可以理解为一个简单的超前控制。在系统的误差信号出现过大之前，就将对应的控制信号输入系统中，这样就加快了系统的响应动作。对于微分时间常数 的设定不能过大，设定的 如果过大，这将导致系统的调节时间变长同时使系统的抗干扰性能下降。若PID控制器的参数未挑选妥当，其控制器输出可能是不稳定的，也就是其输出发散，过程中可能有震荡，也可能没有震荡，且其输出只受饱和或是机械损坏等原因所限制。
+<br><br>
+<span style="margin-left:25px"></span>不稳定一般是因为过大增益造成，特别是针对延迟时间很长的系统。一般而言，PID控制器会要求响应的稳定，不论程序条件及设定值如何组合，都不能出现大幅振荡的情形，不过有时可以接受临界稳定的情形
+<br><br>
+<span style="margin-left:25px"></span>3.2.3滑模控制
+<br><br>
+<span style="margin-left:25px"></span>20 世纪 50 年代前苏联学者提出变结构控制，变结构控制起源于继电器控制和 Bang-Bang 控制，它与常规控制的区别在于控制的不连续性。
+<br><br>
+<span style="margin-left:25px"></span>滑模控制是变结构控制的一 个分支。它是一种非线性控制，通过切换函数来实现，根据系统状态偏离滑模的程度来切换控制器的结构（控制律或控制器参数），从而使系统按照滑模规定的规律运行的控制方法。滑模控制现在已形成一套比较完整的理论体系，并已广泛应用到各种工业控制对象之中。滑模控制得到广泛应用的主要原因是，对非线性系统的良好控制性能，对多输入多输出系统的可应用性，对离散时间系统的建立良好的设计标准。滑模控制的重要的优点是健壮性，当系统处于滑动模型，对被控对象的模型误差、对象参数的变化以及外部干扰有 极佳的不敏感性。滑模变结构控制的原理，是根据系统所期望的动态特性来设计系统的切换超平面，通过滑动模态控制器使系统状态从超平面之外向切换超平面收束。
+<br><br>
+<span style="margin-left:25px"></span>系统一旦到达切换 超平面，控制作用将保证系统沿切换超平面到达系统原点，这一沿切换超平面向原点滑动的过程称为滑模控制。由于系统的特性和参数只取决于设计的切换超平面而与外界干扰没有关系，所以滑模 变结构控制具有很强的 鲁棒性。超平面的设计方法有 极点配置， 特征向量配置设计法，最优化设计方法等，所设计的切换超平面需满足达到条件，即系统在滑模平面后将保持在该平面的条件。控制器的设计有固定顺序控制器设计、自由顺序控制器设计和最终滑动控制器设计等设计方法。3.3 风力发电机组运行稳定域
+<br><br>
+<span style="margin-left:25px"></span>李雅普诺夫稳定性理论指出：
+<br><br>
+<span style="margin-left:25px"></span>非线性动力系统的稳定平衡点一定存在一个邻域，从该邻域内出发的轨线都收敛于该稳定平衡点，这个邻域就称为该稳定平衡点的吸引域，简称稳定域[7]。风力发电机组的暂态稳定对风机的安全运行具有重大的影响，风力发电机组的暂态失稳会导致风机损坏进而发生故障，对风电场造成大量损失，故研究风力发电机组运行稳定域具有重要意义。考虑非线性系统：
+<br><br>
+<span style="margin-left:25px"></span>(3.28)
+<br><br>
+<span style="margin-left:25px"></span>设原点为该系统的渐进稳定平衡点，其中 是局部Lipschitz的，且 是包含原点在内的定义域。
+<br><br>
+<span style="margin-left:25px"></span>设 是系统(3.28)在 时刻初始状态的解。原点的吸引区记为 ，定义为：(3.29)
+<br><br>
+<span style="margin-left:25px"></span>引理3.1 若 是系统(3.28)的渐进稳定平衡点，则其吸引区 是一个开连通不变集，而且 的边界由系统轨线构成。
+<br><br>
+<span style="margin-left:25px"></span>引理3.1提出一种确定吸引区的方法，该方法通过描述在 的边界上的轨线的特征来确定其吸引区。
+<br><br>
+<span style="margin-left:25px"></span>在二阶系统中，通过运用相图来应用动力学系统的几何表示法可以确定吸引区。例3.1给出了通过几何法确定吸引区的情况。例3.1 考虑二阶系统：
+<br><br>
+<span style="margin-left:25px"></span>系统在原点有一个平衡点和一个非稳定极限环，由图3.1可知原点是稳定的，
+<br><br>
+<span style="margin-left:25px"></span>因为始于极限环外面的轨线不能通过极限环到达原点，且不存在其他平衡点，故的边界一定为该极限环，通过相图可知，所有从极限环内开始的轨线都趋向原点。图 3.1 二阶系统相图
+<br><br>
+<span style="margin-left:25px"></span>应用Lyapunov方法可以求出或估算出吸引区 ，若 是由 的一个正不变紧子集估算时，即紧集 使得每条始于 的轨线在之后的所有时刻都会保持在 内，估计值可以表示为集合：
+<br><br>
+<span style="margin-left:25px"></span>其中， 包含于 内且有界。
+<br><br>
+<span style="margin-left:25px"></span>对于Lyapunov函数 ，选择可以保证当 时，有
+<br><br>
+<span style="margin-left:25px"></span>若选取
+<br><br>
+<span style="margin-left:25px"></span>则 是 的一个子集。
+<br><br>
+<span style="margin-left:25px"></span>
+
+<br>
+<div style="margin-left:25px">
+
+</div>
+</div>
+
+
+<div class="zhengwencenter">
+<p>
+检测报告由<a href="http://www.paperpass.com/" target="_blank">PaperPass</a>文献相似度检测系统生成
+</p>
+<p>
+Copyright © 2007-2015 PaperPass
+</p>
+</div>
+<div style="margin-bottom:400px"></div>
+</body>
+</html>

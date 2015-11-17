@@ -1,0 +1,431 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>PaperPass 最权威中文论文抄袭检测系统</title>
+<style type="text/css">
+<!--
+user_icon {
+color: #FFFFFF;
+}
+html
+{
+overflow-x:hidden;
+overflow-y:auto;
+}
+body,td,th {
+font-family: "微软雅黑";
+font-size: 12px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "宋体";
+}
+p{
+margin-bottom:10px;
+}
+demo_padding {
+line-height: 30px;
+}
+.zhengwen {
+padding-right: 15px;
+padding-left: 5px;
+padding-bottom:100px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+}
+.zhengwencenter {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+text-align:center
+}
+.neikuang {
+background-color: #EBEBEB;
+border: 1px solid #999999;
+padding-right: 10px;
+padding-left: 10px;
+margin-top:10px;
+margin-left:25px;
+width:300px;
+}
+.shubu{
+height: 20px;
+width: 20px;
+margin-left:25px;
+background-color: #FFFFFF;
+border: 1px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+color: #666666;
+}
+a.red:link {color:#FF0000}
+a.red:visited {color:#FF0000}
+a.red:hover {color:#000000}
+a.red:active {color:#000000}
+
+a.orange:link {color:#FF6600}
+a.orange:visited {color:#FF6600}
+a.orange:hover {color:#000000}
+a.orange:active {color:#000000}
+
+a.dark:link {color:#666666}
+a.dark:visited {color:#666666}
+a.dark:hover {color:#000000}
+a.dark:active {color:#000000}
+
+a.pagelink:hover {color:#000000}
+a.pagelink:active {color:#000000}
+
+.green{color:#008000}
+.gray{color:#666666}
+.red{color:#FF0000}
+.orange{color:#FF6600}
+a{TEXT-DECORATION:none}
+
+-->
+</style>
+</head>
+<body>
+
+
+<div class="zhengwen">
+
+<span style="margin-left:25px"></span>第四章风力发电机组控制器设计及稳定域分析风力发电的主要目的是最大化利用风能，但由于风的随机性和不可预测性使得风产生的能量也是时刻变化的，
+<br><br>
+<span style="margin-left:25px"></span>这就需要对风力发电机组进行控制，保证风力发电机组在安全运行的前提下，功率输出最大化。上世纪90年代，变桨距风力发电机组进入风力发电市场，采用变桨距控制使得风力发电机组的功率输出特性得到了显着地提高，然而风力发电机组在低风速段的风能转换效率仍然较低。目前，变速变桨风力发电机组已经成为并网型风力发电机组发展的主流机型，变速变桨风力发电机组能够根据风速的变化不断的调节风轮转速，保证在低风速阶段最大化风能利用率。将变速技术与变桨技术集于一体的变速变桨控制技术是目前最优化的控制技术，这种技术还能够减少阵风对风力发电机组造成的损坏，降低噪声，延长机组使用寿命，改善电能质量。本文从工程应用角度出发，基于状态反馈对风力发电机组分别设计了变速控制器和变桨控制器，并通过理论推导证明该系统的稳定性，最后通过仿真验证所设计的控制器能够达到功率输出最优的控制目标，并基于该控制器对风力发电机组的稳定域进行了分析，并通过仿真验证了风力发电机组的稳定域。控制总框图如图4.1所示。图4.1 风电机组控制总框图
+<br><br>
+<span style="margin-left:25px"></span>4.1转矩控制器设计
+<br><br>
+<span style="margin-left:25px"></span>在风速未达到额定风速时，变桨机构不动作，假设理想状态下桨距角为0°。
+<br><br>
+<span style="margin-left:25px"></span>风力发电机组做变速动作，随着风速的变化，风力发电机组通过控制发电机转矩调整发电机的转速，使风轮转速达到期望转速，最大限度的捕获风能[67]。如图4.2所示变速风力发电机组的转矩-转速关系图，一般在 AB段和 CD段，理想的风力发电机组的发电机做恒转速运动，
+<br><br>
+<span style="margin-left:25px"></span>通过转矩 PI控制器调整发电机给定转矩使发电机转速能够维持在恒定转速。在AB段，发电机转速维持在最低转速 ，在CD段发电机转速维持在额定转速 。4.1.1状态反馈控制器设计
+<br><br>
+<span style="margin-left:25px"></span>风力发电机组数学模型表达形式如(4.1)所示：
+<br><br>
+<span style="margin-left:25px"></span>(4.1)
+<br><br>
+<span style="margin-left:25px"></span>式中，  为转子转动角度，  为风轮转动角速度，  是总的机械惯性， 和 分别为粘滞摩擦系数和刚度系数， 为气动转矩， 为利用系数。
+<br><br>
+<span style="margin-left:25px"></span> 为发电机电磁转矩， 。为简化计算， 简化为：(4.2)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为空气密度， 为风轮半径。
+<br><br>
+<span style="margin-left:25px"></span>原问题为控制风轮转速达到期望转速，从而最大限度的捕获风能。为设计状态反馈控制器，首先通过状态转换，将原问题转换成系统在原点稳定的问题。状态转换方程如(4.3)所示：(4.3)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为风轮期望转速与实际转速之差， 为风轮期望转速，且 ， ， 最佳叶尖速比， 为风轮转速。
+<br><br>
+<span style="margin-left:25px"></span> 为转矩偏差， 为发电机电磁转矩， 为转矩执行装置，则状态转换后方程为：(4.4)
+<br><br>
+<span style="margin-left:25px"></span>整理，得：
+<br><br>
+<span style="margin-left:25px"></span>(4.5)
+<br><br>
+<span style="margin-left:25px"></span>其中：
+<br><br>
+<span style="margin-left:25px"></span>设计控制器：
+<br><br>
+<span style="margin-left:25px"></span>(4.6)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为控制器参数，将(4.6)代入(4.5)中，得：
+<br><br>
+<span style="margin-left:25px"></span>(4.7)
+<br><br>
+<span style="margin-left:25px"></span>令 和 ，则：
+<br><br>
+<span style="margin-left:25px"></span>选取李雅普诺夫函数 ，则：
+<br><br>
+<span style="margin-left:25px"></span>(4.8)
+<br><br>
+<span style="margin-left:25px"></span>为使系统稳定，只需满足 。
+<br><br>
+<span style="margin-left:25px"></span>已知风轮半径为38.5 m，额定转速为2 rad/ s，额定风速为12 m/ s，额定功率为1.5 MW，切入风速为3 m/ s，切出风速为25 m/ s。选取 ，  ，  ，  ， 。当 时，满足 ，故设计控制器为：(4.9)
+<br><br>
+<span style="margin-left:25px"></span>稳定性证明：
+<br><br>
+<span style="margin-left:25px"></span>将(4.9)代入(4.5)，得：(4.10)
+<br><br>
+<span style="margin-left:25px"></span>选取李雅普诺夫函数 ，由(4.8)可知 ，即该系统稳定。
+<br><br>
+<span style="margin-left:25px"></span>4.1.2系统稳定域分析
+<br><br>
+<span style="margin-left:25px"></span>风力发电机组控制器设计完成之后，仅仅确定系统有一个渐进稳定点是远远不够的，能够求出平衡点的稳定域或给出稳定域边界更加重要。
+<br><br>
+<span style="margin-left:25px"></span>风力发电机组运行过程中可能会发生一些故障，包括变桨故障等，这些故障会改变系统的结构，可能会导致风力发电机组系统轨线偏离稳定点，假如故障恢复后，该系统运行在平衡点的稳定域内，则该系统可以回到稳定状态；若该系统运行在平衡点的稳定域外，则该系统不会回到稳定状态，这会进一步造成风电机组的损坏。图4.1 系统稳定域
+<br><br>
+<span style="margin-left:25px"></span>由此可见，设计风电机组控制器时给出其稳定域具有重要意义，根据其稳定域可以估算出故障恢复时间临界点，
+<br><br>
+<span style="margin-left:25px"></span>可用来指导维修人员需要在多长时间内修复故障，且设计的控制器稳定域边界越大，说明系统的抗干扰能力越强，可在系统故障的情况下安全运行更长时间，这给维修人员提供了更多时间用来修复故障。在式(4.8)中，给定 ， ， ，  ，  ，  ，  ，为保证 ，则 应满足一定条件，经验证在 的条件下， 。
+<br><br>
+<span style="margin-left:25px"></span>又 ，  则：(4.11)
+<br><br>
+<span style="margin-left:25px"></span>故在该控制器下的风力发电机组运行的稳定域为 ，在此范围内，风力发电机组可正常运行。
+<br><br>
+<span style="margin-left:25px"></span>4.1.3系统仿真结果
+<br><br>
+<span style="margin-left:25px"></span>在风力发电机组整体控制中，所测的发电机转速信号经过传感器传递给主控系统，
+<br><br>
+<span style="margin-left:25px"></span>主控系统输出桨距角指令及转矩指令分别给变桨执行机构和发电机实现调节桨距角和转矩的目的，达到相应工况的控制目标。系统仿真框图如下所示。本文选择额定功率为1.5MW风力发电机组为研究对象，风力发电机组相关参数为：
+<br><br>
+<span style="margin-left:25px"></span>额定风速为11，风轮额定转速为1.97，风轮半径为38.5，风轮转动惯量为，风轮阻尼系数为270.36，齿轮箱齿速比为75.76，最大风能利用系数为0.436，最佳叶尖速比为6.3，仿真时间设置为300。其中转矩控制器和变桨控制器内部设置简单的逻辑切换装置，保证不同的风况下相应的控制环起作用。整体仿真平台如图4.10所示。表 1.5MW风电机组参数
+<br><br>
+<span style="margin-left:25px"></span>参数值单位
+<br><br>
+<span style="margin-left:25px"></span>风轮半径38.5m
+<br><br>
+<span style="margin-left:25px"></span>空气密度1.308Kg/m3
+<br><br>
+<span style="margin-left:25px"></span>风轮转动惯量3.28×106Kg m2
+<br><br>
+<span style="margin-left:25px"></span>风轮额定转速1.97rad/s
+<br><br>
+<span style="margin-left:25px"></span>风轮阻尼系数270.36N m/rad/s
+<br><br>
+<span style="margin-left:25px"></span>齿轮箱齿速比75.76
+<br><br>
+<span style="margin-left:25px"></span>最大风能利用系数0.436
+<br><br>
+<span style="margin-left:25px"></span>额定功率1.5×106W
+<br><br>
+<span style="margin-left:25px"></span>在风速低于额定风速阶段，控制目标为输出功率最大化，此时控制系统会通过逻辑切换至转矩控制模块，通过设计的状态反馈控制器进行调节。
+<br><br>
+<span style="margin-left:25px"></span>本文分别在风速为5m/s、7m/s和9m/s三种风况下进行仿真，其仿真结果如下所示：图4.13  风速曲线图
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，平均风速分别为5 m/ s、7 m/ s和9 m/ s，其中平均风速为5 m/ s的情况中，
+<br><br>
+<span style="margin-left:25px"></span>最大风速为5.87 m/ s，最小风速为4.73 m/ s；平均风速为7m/s的情况中，最大风速为8.31m/s，最小风速为6.44m/s；平均风速为9m/s的情况中，最大风速为10.23m/s，最小风速为8.39m/s；三种风速下误差都不超过12%，表明该风速仿真模块比较精确，可以作为仿真系统输入。图4.14  风能利用系数曲线图
+<br><br>
+<span style="margin-left:25px"></span>图中从上往下依次为5 m/ s、7 m/ s和9 m/ s下风能利用系数的仿真结果，
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出在三种风速下，风能利用系数都能稳定在0.436，即都能到达并稳定在最佳风能利用系数上。在系统稳定后，风能利用系数波动值在[-0.02，0.02]之间，波动幅度较小，表明控制器达到了追踪最大功率的目标。图4.15  风轮转速曲线图
+<br><br>
+<span style="margin-left:25px"></span>图中从上往下依次为5 m/ s、7 m/ s和9 m/ s下风轮转速的仿真结果，
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出在风速为5 m/ s下，风轮转速平均值为0.8 rad/ s；风速为7m/s下，风轮转速平均值为1.2rad/s；风速为9m/s下，风轮转速平均值为1.5rad/s。表明随着风速增大风轮转速也随着增大，图4.16  发电机转矩曲线图
+<br><br>
+<span style="margin-left:25px"></span>图中从上往下依次为5 m/ s、7 m/ s和9 m/ s下发电机输出转矩的仿真结果，
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出风速为5 m/ s下，发电机输出转矩平均值为200000 N m；风速为7m/s下，发电机输出转矩平均值为500000N m；风速为9m/s下，发电机输出转矩平均值为800000N m。随着风速增加，发电机输出转矩也随着增加，风力发电机组通过控制发电机转矩调整发电机的转速，使风轮转速达到期望转速，最大限度的捕获风能。图4.17  风力发电机组输出功率曲线图
+<br><br>
+<span style="margin-left:25px"></span>图中从上往下依次为5 m/ s、7 m/ s和9 m/ s下发电机输出功率的仿真结果，
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出风速为5 m/ s下，发电机输出功率平均值为200000 W；风速为7m/s下，发电机输出功率平均值为700000W；风速为9m/s下，发电机输出功率平均值为1100000W。随着风速增加，发电机输出功率也随着增加，风力发电机组通过控制发电机转矩调整发电机的转速，进而调节发电机的输出功率，使输出功率最大化。4.2变桨控制器设计
+<br><br>
+<span style="margin-left:25px"></span>在风速达到额定风速时，理想状态下的风力发电机组输出功率为额定功率。
+<br><br>
+<span style="margin-left:25px"></span>当风速高于额定风速时，受风力发电机组载荷极限和机械极限等的限制，需要限制风能转换效率，使得发电机输出功率保持在额定功率。为了达到该控制目标，本节通过加性分解原理调节变桨PI控制器的增益，保证在高风速区，变桨系统具有良好的动态响应和稳定裕度。在风速高于额定风速时，本文采用的变桨控制方案如图4.6所示，通过调整控制策略，
+<br><br>
+<span style="margin-left:25px"></span>即由额定转速和实际转速误差调节桨距角，继而控制风轮转速和风力发电机组输出功率。所设计的控制器的基本目标为在风速高于额定风速时保持功率输出稳定在额定功率。图4.6  风力发电机组变桨控制方案
+<br><br>
+<span style="margin-left:25px"></span>4.2.1状态反馈控制器设计
+<br><br>
+<span style="margin-left:25px"></span>变桨控制的最终目标是输出稳定的功率，当风速超过额定风速时，通过非线性控制给定发电机转矩，
+<br><br>
+<span style="margin-left:25px"></span>利用状态反馈设计变桨控制器提高发电质量。高风速控制框图如下所示：图4.7  高风速变桨控制方案
+<br><br>
+<span style="margin-left:25px"></span>当风速大于额定风速时，风力发电机组主要通过控制桨距角来调节输出功率，使得输出功率稳定在额定功率，
+<br><br>
+<span style="margin-left:25px"></span>故控制量为桨距角，为简化模型可将发电机的电磁转矩设置为定值。桨距角的执行机构一般采用一阶惯性环节：(4.12)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为时间常数。
+<br><br>
+<span style="margin-left:25px"></span>风力发电机组模型可表示如(4.13)所示：
+<br><br>
+<span style="margin-left:25px"></span>(4.13)
+<br><br>
+<span style="margin-left:25px"></span>其中， 为时间常数。
+<br><br>
+<span style="margin-left:25px"></span>由于 具有高度非线性，为设计控制器，需将其进行线性化，将(4.13)改写为 的形式，则可表示为：(4.14)
+<br><br>
+<span style="margin-left:25px"></span>(4.15)
+<br><br>
+<span style="margin-left:25px"></span>(4.16)
+<br><br>
+<span style="margin-left:25px"></span>选定输出函数 为 ，其中 为风电机组的额定转速，则进行坐标变换和状态反馈得：
+<br><br>
+<span style="margin-left:25px"></span>(4.17)
+<br><br>
+<span style="margin-left:25px"></span>(4.18)
+<br><br>
+<span style="margin-left:25px"></span>则该系统转化为：
+<br><br>
+<span style="margin-left:25px"></span>(4.19)
+<br><br>
+<span style="margin-left:25px"></span>其中：
+<br><br>
+<span style="margin-left:25px"></span> ， 。可以看出，只需求出 ，便可以得到控制量 。所以，原系统的控制问题转化为一个线性系统的控制器设计问题。对于该系统，可设计控制量 ，其中 为最优反馈增益矩阵，且有 ，R为权系数， 为黎卡提矩阵方程：
+<br><br>
+<span style="margin-left:25px"></span>(4.20)
+<br><br>
+<span style="margin-left:25px"></span>选取 ， ，则由式(4.20)可求出K的值为
+<br><br>
+<span style="margin-left:25px"></span>(4.21)
+<br><br>
+<span style="margin-left:25px"></span>故控制器可设计为：
+<br><br>
+<span style="margin-left:25px"></span>(4.22)
+<br><br>
+<span style="margin-left:25px"></span>稳定性证明：
+<br><br>
+<span style="margin-left:25px"></span> ， 的特征值为 ，特征值都在复平面的左半平面上，即满足Hurwitz矩阵，故系统在原点是渐进稳定的。4.2.2系统稳定域分析
+<br><br>
+<span style="margin-left:25px"></span>由于 是Hurwitz的，所以该系统的李雅普诺夫函数可以表示为：
+<br><br>
+<span style="margin-left:25px"></span>(4.24)
+<br><br>
+<span style="margin-left:25px"></span>其中 ，可解得正定矩阵
+<br><br>
+<span style="margin-left:25px"></span>只需求出 的范围，满足 ，则 的范围即为该系统的稳定域。
+<br><br>
+<span style="margin-left:25px"></span>经验证在 的条件下， 。因为 ， ，故 。故在该控制器下的风力发电机组运行的稳定域为 ，在此范围内，风力发电机组可正常运行。4.2.3系统仿真结果
+<br><br>
+<span style="margin-left:25px"></span>在风力发电机组整体控制中，所测的发电机转速信号经过传感器传递给主控系统，
+<br><br>
+<span style="margin-left:25px"></span>主控系统输出桨距角指令及转矩指令分别给变桨执行机构和发电机实现调节桨距角和转矩的目的，达到相应工况的控制目标。系统仿真框图如下所示。本文选择额定功率为1.5MW风力发电机组为研究对象，风力发电机组相关参数为：
+<br><br>
+<span style="margin-left:25px"></span>额定风速为11，风轮额定转速为1.97，风轮半径为38.5，风轮转动惯量为，风轮阻尼系数为270.36，齿轮箱齿速比为75.76，最大风能利用系数为0.436，最佳叶尖速比为6.3，仿真时间设置为120。其中转矩控制器和变桨控制器内部设置简单的逻辑切换装置，保证不同的风况下相应的控制环起作用。整体仿真平台如图4.10所示。表 1.5MW风电机组参数
+<br><br>
+<span style="margin-left:25px"></span>参数值单位
+<br><br>
+<span style="margin-left:25px"></span>风轮半径38.5m
+<br><br>
+<span style="margin-left:25px"></span>空气密度1.308Kg/m3
+<br><br>
+<span style="margin-left:25px"></span>风轮转动惯量3.28×106Kg m2
+<br><br>
+<span style="margin-left:25px"></span>风轮额定转速1.97rad/s
+<br><br>
+<span style="margin-left:25px"></span>风轮阻尼系数270.36N m/rad/s
+<br><br>
+<span style="margin-left:25px"></span>齿轮箱齿速比75.76
+<br><br>
+<span style="margin-left:25px"></span>最大风能利用系数0.436
+<br><br>
+<span style="margin-left:25px"></span>额定功率1.5×106W
+<br><br>
+<span style="margin-left:25px"></span>在风速高于于额定风速阶段，控制目标为输出功率稳定，此时控制系统会通过逻辑切换至变桨控制模块，通过设计的状态反馈控制器进行调节。
+<br><br>
+<span style="margin-left:25px"></span>本文分别在风速为14m/s、16m/s和18m/s三种风况下进行仿真，其仿真结果如下所示：图4.13  风速曲线图
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，平均风速分别为14 m/ s、16 m/ s和18 m/ s，其中平均风速为14 m/ s的情况中，
+<br><br>
+<span style="margin-left:25px"></span>最大风速为15.87 m/ s，最小风速为12.83 m/ s；平均风速为16m/s的情况中，最大风速为19.31m/s，最小风速为14.44m/s；平均风速为18m/s的情况中，最大风速为21.23m/s，最小风速为16.39m/s；三种风速下误差都不超过14%，表明该风速仿真模块比较精确，可以作为仿真系统输入。图中，从上往下依次是风速为14m/s、16m/s和18m/s状况下风能利用系数仿真结果。
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，风速为14m/s时，风能利用系数平均值为0.2，最大值为0.28，最小值为0.17；风速为16m/s时，风能利用系数平均值为0.15，最大值为0.18，最小值为0.09；风速为18m/s时，风能利用系数平均值为0.1，最大值为0.12，最小值为0.07。随着风速增加，风能利用系数减小，说明风速越大，丢弃的风能越多。图中，从上往下依次是风速为14m/s、16m/s和18m/s状况下风电机组输出功率仿真结果。
+<br><br>
+<span style="margin-left:25px"></span>其中，三种风速下风电机组的输出功率都在额定功率范围内浮动，误差小于8%，表明该控制器控制效果良好，且在在较广的风速范围内正常工作。图中，从上往下依次是风速为14m/s、16m/s和18m/s状况下风轮转速仿真结果。
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，在三种风速下，风轮转速都稳定在1.97rad/s，且随着时间增加，风轮转速比较平稳，未出现较大抖动。风轮额定转速为2rad/s，在控制器作用下输出转速与额定转速偏差为0.015%，表明该控制器达到了较好地控制效果。图中，从上往下依次是风速为14m/s、16m/s和18m/s状况下桨距角的仿真结果。
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，风速为14m/s时，桨距角平均值为12°；风速为16m/s时，桨距角平均值为20°；风速为18m/s时，桨距角平均值为25°。随着风速增加，桨距角也增大，桨距角增大将会导致风能利用率降低，进而使输出功率稳定，表明该控制器达到了预期的控制效果。4.3考虑损耗系数下仿真
+<br><br>
+<span style="margin-left:25px"></span>风电机组长期运行会造成一定地损耗，导致风能利用率降低，此时风电机组模型会发生一定地变化，
+<br><br>
+<span style="margin-left:25px"></span>这对控制器的控制效果会造成一定程度的影响，严重地可能会导致控制系统无法工作。控制器能否在风机损耗状况下保持一定地控制效果，可作为风电机组控制器设计的一项重要指标。为考虑风机损耗对控制器的影响，本文引入风机损耗系数 ，在风机出厂时，风电机组无损耗，即 。
+<br><br>
+<span style="margin-left:25px"></span>随着风电机组运行时间增加，风机损耗系数也会逐渐减小，风能利用系数也会减小，风能利用系数 与风机损耗系数 的关系为：(4.25)
+<br><br>
+<span style="margin-left:25px"></span>风电机组模型变为：
+<br><br>
+<span style="margin-left:25px"></span>(4.26)
+<br><br>
+<span style="margin-left:25px"></span>其中，  为转子转动角度，  为风轮转动角速度，  是总的机械惯性， 和 分别为粘滞摩擦系数和刚度系数， 为气动转矩， 为利用系数。
+<br><br>
+<span style="margin-left:25px"></span> 为发电机电磁转矩， 。本文在 和 这两个损耗系数下，分别对低风速下和高风速下风电机组进行仿真，其中低风速选择风速为5m/s、7m/s和9m/s；
+<br><br>
+<span style="margin-left:25px"></span>高风速选择风速为14m/s、16m/s和18m/s；风电机组使用1.5MW风机。仿真分组情况如下表所示：表 仿真分组
+<br><br>
+<span style="margin-left:25px"></span>风机损耗系数低风速（m/s）高风速（m/s）
+<br><br>
+<span style="margin-left:25px"></span>0.8514
+<br><br>
+<span style="margin-left:25px"></span>716
+<br><br>
+<span style="margin-left:25px"></span>918
+<br><br>
+<span style="margin-left:25px"></span>0.6514
+<br><br>
+<span style="margin-left:25px"></span>716
+<br><br>
+<span style="margin-left:25px"></span>918
+<br><br>
+<span style="margin-left:25px"></span>4.3.1低风速仿真
+<br><br>
+<span style="margin-left:25px"></span>在风速低于额定风速阶段，通过逻辑切换激活低风速控制环，通过风轮的实际转速与期望转速误差进行控制调节，
+<br><br>
+<span style="margin-left:25px"></span>输出相应的给定转矩，使输出功率最大化。仿真结果如图4.13~图4.17所示，分别对应风速曲线、风能利用系数曲线、风轮转速曲线、发电机转矩曲线和风力发电机组功率输出曲线。损耗系数为0.8时：
+<br><br>
+<span style="margin-left:25px"></span>上图分别为在风速为5m/s、7m/s和9m/s状况下风能利用系数曲线、风轮转速曲线、发电机转矩曲线和风力发电机组功率输出曲线。
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，在三种风速下风能利用系数稳定在0.35，当风机损耗系数为1时，最佳风能利用系数为0.436，在风机损耗系数为0.8时风能利用系数约为无损耗时的0.8倍；在风速为5m/s下，风轮转速平均值为0.8rad/s；风速为7m/s下，风轮转速平均值为1.2rad/s；风速为9m/s下，风轮转速平均值为1.5rad/s。相较于无损耗状态，在三种风速下损耗系数为0.8时风轮转速与无损耗状态下风轮转速相同，表明在损耗系数为0.8时，该控制器仍可控制风轮达到最佳转速。风速为5m/s下，发电机输出功率平均值为160000W；风速为7m/s下，发电机输出功率平均值为500000W；风速为9m/s下，发电机输出功率平均值为900000W。相较于无损耗状态，由于风能利用系数减小，风电机组输出功率也随之减小，约为无损耗状态的0.8倍，输出功率仍然达到了在损耗系数为0.8时的最大功率。风速为5m/s下，发电机输出转矩平均值为160000N m；风速为7m/s下，发电机输出转矩平均值为400000N m；风速为9m/s下，发电机输出转矩平均值为600000N m。相较于无损耗状态，发电机输出转矩约为无损耗状态的0.8倍。损耗系数为0.6时：
+<br><br>
+<span style="margin-left:25px"></span>上图分别为在风速为5m/s、7m/s和9m/s状况下风能利用系数曲线、风轮转速曲线、发电机转矩曲线和风力发电机组功率输出曲线。
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，在三种风速下风能利用系数稳定在0.26，当风机损耗系数为1时，最佳风能利用系数为0.436，在风机损耗系数为0.6时风能利用系数约为无损耗时的0.6倍；在风速为5m/s下，风轮转速平均值为0.8rad/s；风速为7m/s下，风轮转速平均值为1.2rad/s；风速为9m/s下，风轮转速平均值为1.5rad/s。相较于无损耗状态和损耗系数为0.8状态，在三种风速下损耗系数为0.6时风轮转速与其他两种状态风轮转速相同，表明在损耗系数为0.6时，该控制器仍可控制风轮达到最佳转速。风速为5m/s下，发电机输出功率平均值为120000W；风速为7m/s下，发电机输出功率平均值为350000W；风速为9m/s下，发电机输出功率平均值为700000W。相较于无损耗状态，由于风能利用系数减小，风电机组输出功率也随之减小，约为无损耗状态的0.6倍，输出功率仍然达到了在损耗系数为0.6时的最大功率。风速为5m/s下，发电机输出转矩平均值为120000N m；风速为7m/s下，发电机输出转矩平均值为200000N m；风速为9m/s下，发电机输出转矩平均值为400000N m。相较于无损耗状态，发电机输出转矩约为无损耗状态的0.6倍。4.3.2高风速仿真
+<br><br>
+<span style="margin-left:25px"></span>损耗系数为0.8时：
+<br><br>
+<span style="margin-left:25px"></span>上图分别为在风速为14m/s、16m/s和18m/s状况下风能利用系数曲线、风轮转速曲线、风力发电机组功率输出曲线和桨距角曲线。
+<br><br>
+<span style="margin-left:25px"></span>从图中可以看出，风速为14m/s时，风能利用系数平均值为0.2，最大值为0.28，最小值为0.17；风速为16m/s时，风能利用系数平均值为0.15，最大值为0.18，最小值为0.09；风速为18m/s时，风能利用系数平均值为0.1，最大值为0.12，最小值为0.07。相较于无损耗状态，风能利用系数相同。在三种风速下，风轮转速都稳定在1.97rad/s，且随着时间增加，风轮转速比较平稳，未出现较大抖动。三种风速下风电机组的输出功率都在额定功率范围内浮动，误差小于8%，表明该控制器控制效果良好，且在在较广的风速范围内正常工作。桨距角相较于无损耗状态，略有减小。表明当风机损耗时，为保证功率输出为额定功率，丢弃的风能相较于无损耗状态要少，使得桨距角比无损耗状态时要大，而风能利用系数、风轮转速和风电机组输出功率与无损耗状态时相同。损耗系数为0.6时：
+<br><br>
+<span style="margin-left:25px"></span>由损耗系数为0.8时得出的结论可知，风能利用系数、风轮转速和风电机组输出功率与应该与无损耗状态时相同，
+<br><br>
+<span style="margin-left:25px"></span>桨距角应该比无损耗状态略小，从图中可以看出，在三种风速下，风能利用系数、风轮转速和风电机组输出功率和桨距角符合上述规律。第五章结论和展望
+<br><br>
+<span style="margin-left:25px"></span>5.1本文总结
+<br><br>
+<span style="margin-left:25px"></span>由于煤、石油、天然气等常规能源过度使用，导致常规能源日益枯竭，且环境污染问题愈加严重。
+<br><br>
+<span style="margin-left:25px"></span>为解决这些问题，开发和利用可再生能源受到了越来越多的重视，风能作一种可再生能源也受到了世界各国的青睐，风力发电技术也随之发展起来。本论文通过阅读国内外风电控制系统相关文献，对风力发电技术原理和控制技术有了一定的认识。大型风力发电机组具有高度非线性和不确定性，本文利用状态反馈对风电机组设计了控制器，并证明了其稳定性，之后给出了在该控制器下风电机组运行的稳定域，这对风机正常运行范围和故障修复时间的估计提供了一定的理论依据。本文主要研究内容和成果如下：
+<br><br>
+<span style="margin-left:25px"></span>1)全面介绍了国内外变速变桨控制技术发展状况
+<br><br>
+<span style="margin-left:25px"></span>首先介绍了变桨变速控制技术的原理和发展状况，并介绍了国内外学者的研究成果，
+<br><br>
+<span style="margin-left:25px"></span>之后对状态反馈控制、 PID控制和滑模控制等常用控制方法做了基本介绍，然后介绍了估算风电机组运行稳定域的重要性和其估算方法。2)建立风电仿真平台
+<br><br>
+<span style="margin-left:25px"></span>利用空气动力学相关知识，分析了风力发电机组的基本工作原理，
+<br><br>
+<span style="margin-left:25px"></span>之后将风力发电机组模型分解为风速模型、风力机模型、传动系统模型、发电机模型和变桨执行机构模型，并对各个模型都进行了建模，最后根据各个模型搭建了风力发电机组控制系统仿真平台。3)对风力发电机组设计控制器并估算其稳定域
+<br><br>
+<span style="margin-left:25px"></span>利用状态转换将原控制问题转换为系统在原点稳定的问题，之后设计出状态反馈控制器并利用李雅普诺夫方法确定控制器参数，
+<br><br>
+<span style="margin-left:25px"></span>最终设计出转矩控制器和变桨控制器，并在所设计的控制器的基础上，估算出了其运行的稳定域。4) 采用Matlab/Simulink工具仿真验证课题提出的控制策略
+<br><br>
+<span style="margin-left:25px"></span>利用本文所建立的风力发电机组控制仿真平台，分别在多种风速下验证控制器的控制效果，结果得出，
+<br><br>
+<span style="margin-left:25px"></span>在控制器能够在低风速阶段达到输出最大功率的控制目标，在高风速阶段达到输出功率稳定的控制目标。5.2本文展望
+<br><br>
+<span style="margin-left:25px"></span>本论文虽然取得了一定地成果，但由于本文的相关研究和仿真工作都是建立在理想状态下的，而风力发电机组是一个非常复杂的系统，
+<br><br>
+<span style="margin-left:25px"></span>在实际运行过程中需考虑很多因素，如风速的突变等对系统的影响等。由于个人能力有限，本文还有一些不足之处，需要在今后的工作中进行研究和改善，在下一步工作中需要改善的地方如下：1）将一些智能算法与本文的控制方法相结合，如神经网络、遗传算法等优化控制参数，提升控制器的控制效果，并通过仿真，与之前进行对比，验证其控制效果。
+<br><br>
+<span style="margin-left:25px"></span>2）设计相关硬件和软件，将控制算法应用到实际的硬件中，并联系厂家将所设计的控制器应用到风电现场进行调试，
+<br><br>
+<span style="margin-left:25px"></span>根据运行结果进一步改进。
+
+<br>
+<div style="margin-left:25px">
+
+</div>
+</div>
+
+
+<div class="zhengwencenter">
+<p>
+检测报告由<a href="http://www.paperpass.com/" target="_blank">PaperPass</a>文献相似度检测系统生成
+</p>
+<p>
+Copyright © 2007-2015 PaperPass
+</p>
+</div>
+<div style="margin-bottom:400px"></div>
+</body>
+</html>

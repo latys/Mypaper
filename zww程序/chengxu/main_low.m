@@ -70,11 +70,11 @@ xlabel('时间(s)')
 ylabel('发电机输出转矩 /N.m')
 grid
 
- fadianjishuchuzhuanju9Mu06=TT4;
-fengdianjishuchugonglv9Mu06=TT5;
-fenglunzhuansu9Mu06=TT2;
-fengnengliyongxishu9Mu06=TT3;
-save('fadianjishuchuzhuanju9Mu06','fadianjishuchuzhuanju9Mu06')
-save('fengdianjishuchugonglv9Mu06','fengdianjishuchugonglv9Mu06')
-save('fenglunzhuansu9Mu06','fenglunzhuansu9Mu06')
- save('fengnengliyongxishu9Mu06','fengnengliyongxishu9Mu06')
+%  fadianjishuchuzhuanju9Mu06=TT4;
+% fengdianjishuchugonglv9Mu06=TT5;
+% fenglunzhuansu9Mu06=TT2;
+% fengnengliyongxishu9Mu06=TT3;
+% save('fadianjishuchuzhuanju9Mu06','fadianjishuchuzhuanju9Mu06')
+% save('fengdianjishuchugonglv9Mu06','fengdianjishuchugonglv9Mu06')
+% save('fenglunzhuansu9Mu06','fenglunzhuansu9Mu06')
+%  save('fengnengliyongxishu9Mu06','fengnengliyongxishu9Mu06')

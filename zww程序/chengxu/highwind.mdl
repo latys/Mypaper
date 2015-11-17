@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.39"
+    ComputedModelVersion    "1.40"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [264.0, 150.0, 1364.0, 726.0]
+      Location		      [-37.0, 713.0, 1364.0, 726.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -55,8 +55,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1312.0, 547.0]
-	ZoomFactor		[1.0]
-	Offset			[0.0, 0.0]
+	ZoomFactor		[0.8]
+	Offset			[-152.70952380952372, 5.76428571428562]
       }
     }
   }
@@ -66,9 +66,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Administrator"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Nov 10 23:01:01 2015"
-  RTWModifiedTimeStamp	  369091428
-  ModelVersionFormat	  "1.%<AutoIncrement:39>"
+  LastModifiedDate	  "Thu Nov 12 22:51:03 2015"
+  RTWModifiedTimeStamp	  369264320
+  ModelVersionFormat	  "1.%<AutoIncrement:40>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -943,7 +943,7 @@ Model {
   }
   System {
     Name		    "highwind"
-    Location		    [264, 150, 1628, 876]
+    Location		    [-37, 713, 1327, 1439]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -955,7 +955,7 @@ Model {
     TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
     SIDHighWatermark	    "162"
     Block {
@@ -2791,7 +2791,7 @@ Model {
       MaskHideContents	      off
       System {
 	Name			"transmission model"
-	Location		[97, 52, 1461, 778]
+	Location		[-16, 116, 1348, 842]
 	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200

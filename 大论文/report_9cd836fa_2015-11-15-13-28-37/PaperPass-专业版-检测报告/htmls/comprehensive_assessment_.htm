@@ -1,0 +1,1350 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>PaperPass 最权威中文论文抄袭检测系统</title>
+<style type="text/css">
+<!--
+user_icon {
+color: #FFFFFF;
+}
+body,td,th {
+font-family: "微软雅黑";
+font-size: 13px;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "宋体";
+}
+demo_padding {
+line-height: 30px;
+}
+html
+{
+overflow-x:hidden;
+overflow-y:scroll;
+}
+.getiao_xsd {
+float: left;
+width: 995px;
+display: inline;
+}
+.getiao_wz {
+width: 75px;
+float: left;
+margin-top: 0px;
+margin-left: 0px;
+display: inline;
+}
+.getiao_percent {
+width: 38px;
+float: left;
+margin-top: 0px;
+margin-left: 5px;
+display: inline;
+}
+.getiao img {
+border: 1px solid #666666;
+margin-top: 0px;
+float: left;
+}
+.liebiao {
+border-bottom-width: 1px;
+border-bottom-style: dashed;
+border-bottom-color: #CCCCCC;
+height: 0px;
+margin-top:10px;
+margin-bottom:10px;
+float: left;
+width: 90%;
+}
+.liebiao ul {
+list-style-type: none;
+display: block;
+margin: 0px;
+clear: none;
+}
+.zhengwen {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+}
+.zhengwencenter {
+padding-right: 15px;
+padding-left: 0px;
+margin-bottom:10px;
+font-size: 13px;
+line-height: 20px;
+color: #666666;
+text-align:center
+}
+.neikuang {
+background-color: #EBEBEB;
+border: 1px dashed #999999;
+padding-right: 10px;
+padding-left: 10px;
+}
+.shubuno{
+float: left;
+height: 15px;
+width: 19px;
+background-color: #FFFFFF;
+border: 0px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+font-size: 13px;
+display:inline;
+}
+.shubu{
+float: left;
+height: 15px;
+width: 15px;
+background-color: #FFFFFF;
+border: 1px solid #999999;
+text-align: center;
+vertical-align: middle;
+display: block;
+font-size: 13px;
+display:inline;
+}
+.shubu1{
+float: left;
+background-color: #FFFFFF;
+text-align: center;
+vertical-align: middle;
+font-size: 13px;
+margin-top:4px;
+display:inline;
+}
+.kuang {
+border: 1px solid #999999;
+}
+.red{color:#FF0000}
+.orange{color:#FF6600}
+.green{color:#008000}
+
+a:hover {color:#000000}
+a:active {color:#000000}
+
+a{TEXT-DECORATION:none}
+.baifenbihand
+{
+float: left;
+margin-top:1px;
+display:inline;
+cursor:hand;
+cursor:pointer;
+}
+.baifenbi
+{
+float: left;
+margin-top:1px;
+display:inline;
+}
+.xiangsigif {
+float: left;
+margin-left:5px;
+display:inline;
+}
+
+.xiangsigif img {
+border: 1px solid #666666;
+float: left;
+margin-left:0px;
+margin-right:3px;
+display:inline;
+}
+
+.xiangsigif1 {
+margin-left:0px;
+display:inline;
+}
+
+.xiangsigif1 img {
+border: 1px solid #666666;
+margin-left:0px;
+margin-right:3px;
+display:inline;
+}
+
+-->
+</style>
+<script type="text/javascript">
+function showobj(objIDName) {
+objctlocal = document.getElementById('local'+objIDName);
+objctlocal.setAttribute('style', "display:block;");
+objxiangxi = document.getElementById('xiangxi' + objIDName);
+objxiangxi.setAttribute('style', "display:none;");
+objshouqi = document.getElementById('shouqi' + objIDName);
+objshouqi.setAttribute('style', "display:block;");
+
+}
+function noneobj(objIDName) {
+objctlocal = document.getElementById('local' + objIDName);
+objctlocal.setAttribute('style', "display:none;");
+objxiangxi = document.getElementById('xiangxi' + objIDName);
+objxiangxi.setAttribute('style', "display:block;");
+objshouqi = document.getElementById('shouqi' + objIDName);
+objshouqi.setAttribute('style', "display:none;");
+}
+</script>
+</head>
+<body>
+
+<table width="100%" cellpadding="3" cellspacing="3" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left">
+<b>
+<font color="#666666">总体信息</font></b>
+</td>
+</tr>
+
+
+<tr>
+<td align="left">
+<div class="getiao">
+<div class="getiao_xsd">
+<div class="getiao_wz" style="width: 94px; height: 13px"><font color="#666666">&nbsp;&nbsp;&nbsp;总体相似度：</font></div>
+<img src="../images/percent_1.gif" width="90" height="15"/><div class="getiao_percent"><span  class='orange' >46%</a></div>
+<div class="getiao_wz" style="width: 463px; height: 13px"><font color="#666666">总体相似度是指本地库、互联网的综合比对结果</font></div>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<div class="getiao">
+<div class="getiao_xsd">
+<div class="getiao_wz" style="width: 94px; height: 13px"><font color="#666666">本地库相似度：</font></div>
+<img src="../images/percent_local.gif" width="90" height="15"/><div class="getiao_percent"><span  class='orange' >40%</a></div>
+<div class="getiao_wz" style="width: 463px; height: 13px"><font color="#666666">本地库相似度是指论文与学术期刊、学位论文、会议论文数据库的比对结果</font></div>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<div class="getiao">
+<div class="getiao_xsd">
+<div class="getiao_wz" style="width: 94px; height: 13px"><font color="#666666">互联网相似度：</font></div>
+<img src="../images/percent_net.gif" width="90" height="15"/><div class="getiao_percent"><span  class='green' >17%</a></div>
+<div class="getiao_wz" style="width: 463px; height: 13px"><font color="#666666">互联网相似度是指论文与互联网资源的比对结果</font></div>
+</div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<font color="#666666">相似度计算公式&nbsp;:&nbsp;
+<font color="#666666">（句子1相似度+句子2相似度+...+句子n相似度）/&nbsp;n</font>，句子相似度范围0.0~1.0，绿色句子相似度按照0计算。
+</td>
+</tr>
+
+<tr>
+<td align="left">
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<font color="#666666">字数<b>:</b>6155</font>&nbsp;&nbsp;
+<font color="#666666">词语数<b>:</b>2587</font>&nbsp;&nbsp;
+<font color="#666666">句子数<b>:</b>232</font>&nbsp;&nbsp;
+<font color="#666666">段落数<b>:</b>124</font>&nbsp;&nbsp;
+<font color="#666666">&nbsp;&nbsp;注：系统按照Word字数统计里面的字符数（不计空格）计算！</font>
+</td>
+</tr>
+
+<tr>
+<td align="left">
+</td>
+</tr>
+
+<tr>
+<td align="left">
+<font color="#666666">比对库范围<b>：</b>学术期刊（1990-2015）、学位论文（硕博库1990-2014）、会议论文（1990-2015）、互联网资源</font><br><br>
+<font color="#666666">检测报告编号<b>：</b>564818050E971FQ54</font>&nbsp;&nbsp;
+<a href="http://www.paperpass.com/check" target="_blank"><b>查询真伪</b></a>
+<br><br><font color=red size=3>不支持官网（www.paperpass.com）真伪查询的检测报告均为假货，谨防上当！</font><br><br>
+</td>
+</tr>
+
+</table>
+
+
+<table width="100%" cellpadding="3" cellspacing="3" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" colspan="2">
+<b>
+<font color="#666666">句子信息</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<font color="#666666">
+句子个数<b>:</b>232&nbsp;&nbsp; 平均句长<b>:</b>28字&nbsp;&nbsp;
+最大句长<b>:</b>84字&nbsp;&nbsp; 最小句长<b>:</b>2字&nbsp;&nbsp;
+</font></td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<img src="../images/Sentence.png" border="0">
+</td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<img src="../images/Sentence.jpg" border="0">
+</td>
+</tr>
+</table>
+
+
+<table width="100%" cellpadding="1" cellspacing="2" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" width="100%">
+<font color="#666666"><b>本地库相似资源（学术期刊、学位论文、会议论文）</font>
+</td>
+</tr>
+<tr>
+<td align="left" width="100%">
+<div class="shubu">1</div>
+<div class="xiangsigif"><img src="../images/12.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >12</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi1" style="display:block" class="baifenbihand" onclick="showobj('1')" >[详细↓]</div>
+<div id="shouqi1" style="display:none" class="baifenbihand" onclick="noneobj('1')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 河北工业大学 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>吕翔宙</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《兆瓦级风力发电机组变桨距控制研究》</div>
+
+</td>
+</tr>
+<tr id="local1" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《兆瓦级风力发电机组变桨距控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>吕翔宙&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP273.4&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制科学与工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>张磊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>河北工业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电机组 变桨距控制 数学模型 失效运行 检测方法 模糊控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">2</div>
+<div class="xiangsigif"><img src="../images/7.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >7</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi2" style="display:block" class="baifenbihand" onclick="showobj('2')" >[详细↓]</div>
+<div id="shouqi2" style="display:none" class="baifenbihand" onclick="noneobj('2')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西安电子科技大学 2013</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张佳兴</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《周边桁架可展开天线展开过程控制方法研究》</div>
+
+</td>
+</tr>
+<tr id="local2" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《周边桁架可展开天线展开过程控制方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张佳兴&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>黄进&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西安电子科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2013&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">3</div>
+<div class="xiangsigif"><img src="../images/6.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >6</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi3" style="display:block" class="baifenbihand" onclick="showobj('3')" >[详细↓]</div>
+<div id="shouqi3" style="display:none" class="baifenbihand" onclick="noneobj('3')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 浙江大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>左彬</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《主动电磁轴承—转子系统控制器的设计》</div>
+
+</td>
+</tr>
+<tr id="local3" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《主动电磁轴承—转子系统控制器的设计》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>左彬&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP273.2&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>电机与电器&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>祝长生&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>浙江大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>主动电磁轴承 转子系统 模糊PD控制器 H∞控制器 DSP Kalman滤波器&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">4</div>
+<div class="xiangsigif"><img src="../images/6.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >6</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi4" style="display:block" class="baifenbihand" onclick="showobj('4')" >[详细↓]</div>
+<div id="shouqi4" style="display:none" class="baifenbihand" onclick="noneobj('4')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西安电子科技大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>朱加辉</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《两轮自平衡小车反馈线性化及变结构控制研究》</div>
+
+</td>
+</tr>
+<tr id="local4" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《两轮自平衡小车反馈线性化及变结构控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>朱加辉&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP242.3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>屈胜利&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西安电子科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>两轮自平衡小车 李导数 局部反馈线性化 动态滑模变结构控制 轮式移动机器人 动力学系统&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">5</div>
+<div class="xiangsigif"><img src="../images/5.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >5</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi5" style="display:block" class="baifenbihand" onclick="showobj('5')" >[详细↓]</div>
+<div id="shouqi5" style="display:none" class="baifenbihand" onclick="noneobj('5')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 上海交通大学 2004</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>俞建峰</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《可重构装配系统建模、优化与控制研究》</div>
+
+</td>
+</tr>
+<tr id="local5" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《可重构装配系统建模、优化与控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>俞建峰&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TH122.5&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>博士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>殷跃红&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>上海交通大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2004&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>可重构装配系统 Petri网 遗传算法 切换预测控制 平衡 调度&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">6</div>
+<div class="xiangsigif"><img src="../images/5.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >5</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi6" style="display:block" class="baifenbihand" onclick="showobj('6')" >[详细↓]</div>
+<div id="shouqi6" style="display:none" class="baifenbihand" onclick="noneobj('6')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《微型机与应用》 2013年2期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>权利敏 赵景波 王晔</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于滑模控制的伺服系统的建模与仿真》</div>
+
+</td>
+</tr>
+<tr id="local6" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于滑模控制的伺服系统的建模与仿真》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>权利敏 赵景波 王晔&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>青岛理工大学自动化工程学院,山东青岛,266033&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>4篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P81—P83&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP273&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP2 TP1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《微型机与应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2013年2期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1674-7720&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>滑模控制 转台伺服系统 Stribeck模型 Matlab/Simulink&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">7</div>
+<div class="xiangsigif"><img src="../images/4.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >4</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi7" style="display:block" class="baifenbihand" onclick="showobj('7')" >[详细↓]</div>
+<div id="shouqi7" style="display:none" class="baifenbihand" onclick="noneobj('7')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 沈阳建筑大学 2013</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>田晓磊</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《半主动建筑结构振动控制问题研究》</div>
+
+</td>
+</tr>
+<tr id="local7" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《半主动建筑结构振动控制问题研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>田晓磊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TB535.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>乔枫&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>沈阳建筑大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2013&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>振动控制 半主动建筑结构 磁流变阻尼器 滑模控制 MATLAB仿真 动态特性&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">8</div>
+<div class="xiangsigif"><img src="../images/3.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >3</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi8" style="display:block" class="baifenbihand" onclick="showobj('8')" >[详细↓]</div>
+<div id="shouqi8" style="display:none" class="baifenbihand" onclick="noneobj('8')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西安电子科技大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>龚春晖</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《两轮不稳定小车的变结构控制研究》</div>
+
+</td>
+</tr>
+<tr id="local8" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《两轮不稳定小车的变结构控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>龚春晖&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP242&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>屈胜利&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西安电子科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>两轮自平衡小车 系统建模 准滑模变结构控制 轮式移动机器人&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">9</div>
+<div class="xiangsigif"><img src="../images/3.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >3</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi9" style="display:block" class="baifenbihand" onclick="showobj('9')" >[详细↓]</div>
+<div id="shouqi9" style="display:none" class="baifenbihand" onclick="noneobj('9')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 太原科技大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>赵潇菲</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《柔性倒立摆的控制方法研究》</div>
+
+</td>
+</tr>
+<tr id="local9" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《柔性倒立摆的控制方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>赵潇菲&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM571&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>张井岗&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>太原科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">10</div>
+<div class="xiangsigif"><img src="../images/3.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >3</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi10" style="display:block" class="baifenbihand" onclick="showobj('10')" >[详细↓]</div>
+<div id="shouqi10" style="display:none" class="baifenbihand" onclick="noneobj('10')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 兰州理工大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王开福</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《直驱式风力发电机机侧变流器的控制研究》</div>
+
+</td>
+</tr>
+<tr id="local10" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《直驱式风力发电机机侧变流器的控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王开福&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM315&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>王晓明&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>兰州理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>永磁同步发电机 SVPWM调制 转子位置 滑模控制 风能捕获 机侧变流器&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">11</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi11" style="display:block" class="baifenbihand" onclick="showobj('11')" >[详细↓]</div>
+<div id="shouqi11" style="display:none" class="baifenbihand" onclick="noneobj('11')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 华北电力大学 2013</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张博雅</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《一类欠驱动系统的滑模控制研究》</div>
+
+</td>
+</tr>
+<tr id="local11" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《一类欠驱动系统的滑模控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张博雅&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>周超&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>华北电力大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2013&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">12</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi12" style="display:block" class="baifenbihand" onclick="showobj('12')" >[详细↓]</div>
+<div id="shouqi12" style="display:none" class="baifenbihand" onclick="noneobj('12')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>会议论文  2007-12-24</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>李杏培 柳亦兵</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《风速模型分析》</div>
+
+</td>
+</tr>
+<tr id="local12" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>会议论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《风速模型分析》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>李杏培 柳亦兵&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>华北电力大学自动化系,北京 102206；华北电力大学能源与动力工程学院,北京 102206&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议名称<b>：</b></font>华北电力大学第五届研究生学术交流年会&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">主办单位<b>：</b></font>华北电力大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议时间<b>：</b></font>2007-12-24&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议地点<b>：</b></font>北京&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电 风频分布 风速模型 功率谱 系统仿真&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">13</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi13" style="display:block" class="baifenbihand" onclick="showobj('13')" >[详细↓]</div>
+<div id="shouqi13" style="display:none" class="baifenbihand" onclick="noneobj('13')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 东北大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>梁伟</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《泥水式盾构机液压推进系统研究》</div>
+
+</td>
+</tr>
+<tr id="local13" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《泥水式盾构机液压推进系统研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>梁伟&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>U455.39&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>从恒斌&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>东北大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>泥水式盾构机 液压推进系统 分区控制 数学模型 专家系统 故障诊断&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">14</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi14" style="display:block" class="baifenbihand" onclick="showobj('14')" >[详细↓]</div>
+<div id="shouqi14" style="display:none" class="baifenbihand" onclick="noneobj('14')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 东南大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>温鹏</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《风力发电机组建模与控制》</div>
+
+</td>
+</tr>
+<tr id="local14" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《风力发电机组建模与控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>温鹏&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM315&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>能源信息技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>沈炯&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>东南大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电系统 控制策略 风速模型 风能特性 极值搜索&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">15</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi15" style="display:block" class="baifenbihand" onclick="showobj('15')" >[详细↓]</div>
+<div id="shouqi15" style="display:none" class="baifenbihand" onclick="noneobj('15')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《中国电子科学研究院学报》 2006年6期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>高彬娜</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《数字PID控制在运动控制系统中的应用》</div>
+
+</td>
+</tr>
+<tr id="local15" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《数字PID控制在运动控制系统中的应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>高彬娜&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>中国电子科技集团公司第45研究所,河北,燕郊,065201&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>2篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P564—P567,579&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>5页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TN741&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP2 TH1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《中国电子科学研究院学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2006年6期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1673-5692&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>运动控制 数字PID PID控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">16</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi16" style="display:block" class="baifenbihand" onclick="showobj('16')" >[详细↓]</div>
+<div id="shouqi16" style="display:none" class="baifenbihand" onclick="noneobj('16')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 天津大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>付德宝</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《变速恒频风力发电系统传动链转矩波动控制》</div>
+
+</td>
+</tr>
+<tr id="local16" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《变速恒频风力发电系统传动链转矩波动控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>付德宝&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP273&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>电机与电器&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>夏长亮&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>天津大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电机 变速恒频 传动链阻尼 转矩波动控制 状态反馈 自抗扰控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">17</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi17" style="display:block" class="baifenbihand" onclick="showobj('17')" >[详细↓]</div>
+<div id="shouqi17" style="display:none" class="baifenbihand" onclick="noneobj('17')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 江苏科技大学 2007</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>芮素波</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《网络环境下遥操作机器人系统滑模变结构控制研究》</div>
+
+</td>
+</tr>
+<tr id="local17" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《网络环境下遥操作机器人系统滑模变结构控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>芮素波&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP242&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>模式识别与智能系统&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>曾庆军&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>江苏科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>机器人控制 模糊滑模控制 计算机网络 遥操作机器人&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">18</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi18" style="display:block" class="baifenbihand" onclick="showobj('18')" >[详细↓]</div>
+<div id="shouqi18" style="display:none" class="baifenbihand" onclick="noneobj('18')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西安科技大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>姜海旭</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于ARM Cortex-M3的迷宫电脑鼠设计与实现》</div>
+
+</td>
+</tr>
+<tr id="local18" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于ARM Cortex-M3的迷宫电脑鼠设计与实现》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>姜海旭&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP242&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>信号与信息处理&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>吴延海&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西安科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>迷宫电脑鼠 硬件模块 软件驱动 性能评价 微处理器&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">19</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi19" style="display:block" class="baifenbihand" onclick="showobj('19')" >[详细↓]</div>
+<div id="shouqi19" style="display:none" class="baifenbihand" onclick="noneobj('19')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 东北大学 2007</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张敬妹</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《4D动感影院气动座椅的设计计算及动态性能分析》</div>
+
+</td>
+</tr>
+<tr id="local19" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《4D动感影院气动座椅的设计计算及动态性能分析》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张敬妹&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM383.44&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>宋锦春&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>东北大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>气压位置伺服系统 垂直定位 分段PID控制 状态反馈 变增益控制 气动座椅 动感影院 线性模型&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">20</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi20" style="display:block" class="baifenbihand" onclick="showobj('20')" >[详细↓]</div>
+<div id="shouqi20" style="display:none" class="baifenbihand" onclick="noneobj('20')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西南交通大学 2005</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>任毅</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《平面铰链四杆机构的动力和控制设计》</div>
+
+</td>
+</tr>
+<tr id="local20" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《平面铰链四杆机构的动力和控制设计》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>任毅&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TH112.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械设计及理论&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>谢进&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西南交通大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2005&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>平面铰链四杆机构 质量重配 输入扭矩波动&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">21</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi21" style="display:block" class="baifenbihand" onclick="showobj('21')" >[详细↓]</div>
+<div id="shouqi21" style="display:none" class="baifenbihand" onclick="noneobj('21')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 重庆大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>唐兴无</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《电弧炉水冷系统控制》</div>
+
+</td>
+</tr>
+<tr id="local21" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《电弧炉水冷系统控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>唐兴无&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TF345.5&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>刘大湧&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>重庆大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电弧炉 水冷系统 控制技术&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">22</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi22" style="display:block" class="baifenbihand" onclick="showobj('22')" >[详细↓]</div>
+<div id="shouqi22" style="display:none" class="baifenbihand" onclick="noneobj('22')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 长沙理工大学 2012</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>陈斌</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于PID算法的电液比例阀控制系统研究》</div>
+
+</td>
+</tr>
+<tr id="local22" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于PID算法的电液比例阀控制系统研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>陈斌&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP368.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>电路与系统&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>杨安平&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>长沙理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2012&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>PID算法 电液比例阀 控制系统 上位机联接 实时监测 响应特性&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">23</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi23" style="display:block" class="baifenbihand" onclick="showobj('23')" >[详细↓]</div>
+<div id="shouqi23" style="display:none" class="baifenbihand" onclick="noneobj('23')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 浙江工业大学 2005</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>仇翔</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于神经网络优化的永磁同步直线电机滑模控制研究》</div>
+
+</td>
+</tr>
+<tr id="local23" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于神经网络优化的永磁同步直线电机滑模控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>仇翔&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM301.2&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>检测技术与自动化装置&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>俞立&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>浙江工业大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2005&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>滑模变结构控制 神经网络 永磁同步电机 推力观测器 径向基函数 直线电机 变结构控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">24</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi24" style="display:block" class="baifenbihand" onclick="showobj('24')" >[详细↓]</div>
+<div id="shouqi24" style="display:none" class="baifenbihand" onclick="noneobj('24')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 上海交通大学 2007</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>廖明</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《智能多点模糊PID温度控制系统》</div>
+
+</td>
+</tr>
+<tr id="local24" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《智能多点模糊PID温度控制系统》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>廖明&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TS152&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>高电压与绝缘技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>罗利文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>上海交通大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>纺织拉丝工艺 热辊辊体 温度控制系统 稳态精度&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">25</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi25" style="display:block" class="baifenbihand" onclick="showobj('25')" >[详细↓]</div>
+<div id="shouqi25" style="display:none" class="baifenbihand" onclick="noneobj('25')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 太原理工大学 2010</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>程昱舒</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《双馈风力发电机组的建模及其并网研究》</div>
+
+</td>
+</tr>
+<tr id="local25" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《双馈风力发电机组的建模及其并网研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>程昱舒&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM315&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>""&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>韩肖清&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>太原理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2010&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>双馈风力发电机组 数学模型 矢量控制 并网运行 暂态特性 动态特性 调频控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">26</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi26" style="display:block" class="baifenbihand" onclick="showobj('26')" >[详细↓]</div>
+<div id="shouqi26" style="display:none" class="baifenbihand" onclick="noneobj('26')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《汽车工程》 2001年5期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>鹿笑冬 童毅 欧阳明高</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《汽车动力系统的滑模控制》</div>
+
+</td>
+</tr>
+<tr id="local26" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《汽车动力系统的滑模控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>鹿笑冬 童毅 欧阳明高&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>清华大学,&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>13篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P344—P348&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>5页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>U46&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>U46 TP2&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《汽车工程》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2001年5期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1000-680X&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>动力系统 鲁棒性控制 滑模控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">27</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi27" style="display:block" class="baifenbihand" onclick="showobj('27')" >[详细↓]</div>
+<div id="shouqi27" style="display:none" class="baifenbihand" onclick="noneobj('27')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《微型机与应用》 2011年14期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>唐平江 周永华</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于自适应模糊PID智能车用直流电机控制器仿真研究》</div>
+
+</td>
+</tr>
+<tr id="local27" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于自适应模糊PID智能车用直流电机控制器仿真研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>唐平江 周永华&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>广西大学电气工程学院,广西南宁,530004&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>5篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>1次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P79—P81&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP29&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP2 TM9&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《微型机与应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2011年14期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1674-7720&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电机控制 自适应模糊PID MATLAB 仿真&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">28</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi28" style="display:block" class="baifenbihand" onclick="showobj('28')" >[详细↓]</div>
+<div id="shouqi28" style="display:none" class="baifenbihand" onclick="noneobj('28')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>会议论文  2007-12-24</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>柯伟 刘衍平</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于Simulink的风力机传动系统性能仿真》</div>
+
+</td>
+</tr>
+<tr id="local28" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>会议论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于Simulink的风力机传动系统性能仿真》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>柯伟 刘衍平&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>华北电力大学能源与动力工程学院,北京,102206&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议名称<b>：</b></font>华北电力大学第五届研究生学术交流年会&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">主办单位<b>：</b></font>华北电力大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议时间<b>：</b></font>2007-12-24&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议地点<b>：</b></font>北京&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电机组 传动系统 性能仿真&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">29</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi29" style="display:block" class="baifenbihand" onclick="showobj('29')" >[详细↓]</div>
+<div id="shouqi29" style="display:none" class="baifenbihand" onclick="noneobj('29')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《机械与电子》 2010年7期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>高文元 王现青 王加伟 马小英 孙涛</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《兆瓦级风力机传动系统的研究与分析》</div>
+
+</td>
+</tr>
+<tr id="local29" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《兆瓦级风力机传动系统的研究与分析》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>高文元 王现青 王加伟 马小英 孙涛&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>兰州理工大学机电工程学院,甘肃,兰州,730050&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>7篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P26—P28&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP391&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TM3 TK8&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>宁波市自然科学基金(2009A610094);兰州市科技计划项目(2008-01-06)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《机械与电子》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2010年7期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1001-2257&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力机 刚性传动系统 柔性传动系统 仿真&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">30</div>
+<div class="xiangsigif"><img src="../images/2.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >2</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi30" style="display:block" class="baifenbihand" onclick="showobj('30')" >[详细↓]</div>
+<div id="shouqi30" style="display:none" class="baifenbihand" onclick="noneobj('30')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 电子科技大学 2008</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>杨尧</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于MSP430的航空制冷控制专用系统设计与实现》</div>
+
+</td>
+</tr>
+<tr id="local30" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于MSP430的航空制冷控制专用系统设计与实现》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>杨尧&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TB65&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>计算机应用技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>廖建明&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>电子科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2008&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>航空制冷 制冷控制 温度控制 自动化控制 MSP430&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">31</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi31" style="display:block" class="baifenbihand" onclick="showobj('31')" >[详细↓]</div>
+<div id="shouqi31" style="display:none" class="baifenbihand" onclick="noneobj('31')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 华北电力大学 2011</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张照彦</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《变速恒频风电机组建模与实时仿真研究》</div>
+
+</td>
+</tr>
+<tr id="local31" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《变速恒频风电机组建模与实时仿真研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张照彦&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM614&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>马永光&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>华北电力大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2011&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">32</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi32" style="display:block" class="baifenbihand" onclick="showobj('32')" >[详细↓]</div>
+<div id="shouqi32" style="display:none" class="baifenbihand" onclick="noneobj('32')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《城市建设理论研究（电子版）》 2012年17期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>黄萍</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《如何实现PID技术在制浆造纸企业污水处理中对pH值的控制》</div>
+
+</td>
+</tr>
+<tr id="local32" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《如何实现PID技术在制浆造纸企业污水处理中对pH值的控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>黄萍&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>广西博士海意信息科技有限公司&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>6篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>0页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP2 TS1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《城市建设理论研究（电子版）》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2012年17期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>2095—2104&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>pH值 酸碱中和 PID&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">33</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi33" style="display:block" class="baifenbihand" onclick="showobj('33')" >[详细↓]</div>
+<div id="shouqi33" style="display:none" class="baifenbihand" onclick="noneobj('33')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 中北大学 2014</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>李晓飞</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《平面电机运动控制系统的研究》</div>
+
+</td>
+</tr>
+<tr id="local33" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《平面电机运动控制系统的研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>李晓飞&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP273&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>仪器仪表工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>刘新妹&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>中北大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2014&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>平面电机 运动控制 驱动器 LabVIEW&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">34</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi34" style="display:block" class="baifenbihand" onclick="showobj('34')" >[详细↓]</div>
+<div id="shouqi34" style="display:none" class="baifenbihand" onclick="noneobj('34')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《漳州师范学院学报（自然科学版）》 2009年3期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>陈磊松</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《数据流处理系统的负载控制策略研究》</div>
+
+</td>
+</tr>
+<tr id="local34" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《数据流处理系统的负载控制策略研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>陈磊松&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>漳州师范学院,传媒技术中心,福建,漳州,363000&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>5篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P30—P32&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP311&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP3 TN9&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《漳州师范学院学报（自然科学版）》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2009年3期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1008-7826&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>数据流 负载平衡 控制策略&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">35</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi35" style="display:block" class="baifenbihand" onclick="showobj('35')" >[详细↓]</div>
+<div id="shouqi35" style="display:none" class="baifenbihand" onclick="noneobj('35')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《电力系统自动化》 2006年11期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>马进 程代展 梅生伟 卢强</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于半张量理论的电力系统稳定域边界逼近(二)应用》</div>
+
+</td>
+</tr>
+<tr id="local35" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于半张量理论的电力系统稳定域边界逼近(二)应用》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>马进 程代展 梅生伟 卢强&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>华北电力大学电力系统保护与动态安全监控教育部重点实验室,北京市,102206；中国科学院数学与系统科学研究院,北京市,100080；清华大学电机系,北京市,100084&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>19篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P7—P12&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>6页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM7&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TM7 TU3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家研究发展基金(2004CB217901);国家自然科学基金(50595410);华北电力大学校科研和教改项目(Dr.2004-11)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《电力系统自动化》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2006年11期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1000-1026&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电力系统暂态稳定 稳定域边界 能量函数方法 半张量理论&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">36</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi36" style="display:block" class="baifenbihand" onclick="showobj('36')" >[详细↓]</div>
+<div id="shouqi36" style="display:none" class="baifenbihand" onclick="noneobj('36')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 大连理工大学 2006</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>余树洲</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《汽车电动助力转向系统助力特性的仿真研究》</div>
+
+</td>
+</tr>
+<tr id="local36" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《汽车电动助力转向系统助力特性的仿真研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>余树洲&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP183&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>车辆工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>周雅夫&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>大连理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2006&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电动助力转向 助力特性 系统仿真 神经网络 汽车&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">37</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi37" style="display:block" class="baifenbihand" onclick="showobj('37')" >[详细↓]</div>
+<div id="shouqi37" style="display:none" class="baifenbihand" onclick="noneobj('37')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《煤矿自动化》 2001年2期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>陈丽兰</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《模糊PID调节器的控制策略研究》</div>
+
+</td>
+</tr>
+<tr id="local37" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《模糊PID调节器的控制策略研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>陈丽兰&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>常州工学院电气系,&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>2篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>6次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P13—P14&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>2页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP214&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP3 TP2&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《煤矿自动化》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2001年2期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1671-251X&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>模糊控制 PID调节器 参数整定&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">38</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi38" style="display:block" class="baifenbihand" onclick="showobj('38')" >[详细↓]</div>
+<div id="shouqi38" style="display:none" class="baifenbihand" onclick="noneobj('38')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 长安大学 2007</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>杨艳芬</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《汽车电动助力转向系统的发展和控制策略研究》</div>
+
+</td>
+</tr>
+<tr id="local38" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《汽车电动助力转向系统的发展和控制策略研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>杨艳芬&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>U463.444&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>载运工具运用工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>吴克刚&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>长安大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>汽车 电控助力转向 助力特性 动态补偿 控制策略&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">39</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi39" style="display:block" class="baifenbihand" onclick="showobj('39')" >[详细↓]</div>
+<div id="shouqi39" style="display:none" class="baifenbihand" onclick="noneobj('39')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 陕西科技大学 2009</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王开专</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《MW级风力发电机组传动系统输出性能及动力学特性研究》</div>
+
+</td>
+</tr>
+<tr id="local39" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《MW级风力发电机组传动系统输出性能及动力学特性研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王开专&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM315&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械电子工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>张锁怀&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>陕西科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2009&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电机组 传动系统 输出性能 动力学特性&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">40</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi40" style="display:block" class="baifenbihand" onclick="showobj('40')" >[详细↓]</div>
+<div id="shouqi40" style="display:none" class="baifenbihand" onclick="noneobj('40')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 西安理工大学 2006</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王淑琴</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《大型水平轴风力机传动系统动力学分析与仿真》</div>
+
+</td>
+</tr>
+<tr id="local40" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《大型水平轴风力机传动系统动力学分析与仿真》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王淑琴&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TK831.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械设计及理论&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>郗向儒&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>西安理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2006&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>水平轴风力机 传动系统 动力学 仿真分析&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">41</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi41" style="display:block" class="baifenbihand" onclick="showobj('41')" >[详细↓]</div>
+<div id="shouqi41" style="display:none" class="baifenbihand" onclick="noneobj('41')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>会议论文  2008-09-11</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>侯强 汪涛 史兴才 李广波 史昕烨</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《用富士变频器和PLC实现供水系统的自动恒压控制》</div>
+
+</td>
+</tr>
+<tr id="local41" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>会议论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《用富士变频器和PLC实现供水系统的自动恒压控制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>侯强 汪涛 史兴才 李广波 史昕烨&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>东北电力大学,吉林省 吉林市 132012；北华大学,吉林省 吉林市 132021；齐齐哈尔供电局,黑龙江省 齐齐哈尔市 161000&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议名称<b>：</b></font>中国电机工程学会第十届青年学术会议&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">主办单位<b>：</b></font>中国电机工程学会&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议时间<b>：</b></font>2008-09-11&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">会议地点<b>：</b></font>吉林&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>供水系统 变频调速 PLC控制器 自动恒压控制 系统结构&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">42</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi42" style="display:block" class="baifenbihand" onclick="showobj('42')" >[详细↓]</div>
+<div id="shouqi42" style="display:none" class="baifenbihand" onclick="noneobj('42')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 广西大学 2003</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王永</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《静止无功补偿器的模糊滑模控制方法的研究》</div>
+
+</td>
+</tr>
+<tr id="local42" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《静止无功补偿器的模糊滑模控制方法的研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王永&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP273.4&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>肖仁山&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>广西大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2003&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>无功补偿器 模糊滑模变结构 电力系统 模糊控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">43</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi43" style="display:block" class="baifenbihand" onclick="showobj('43')" >[详细↓]</div>
+<div id="shouqi43" style="display:none" class="baifenbihand" onclick="noneobj('43')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《电网技术》 2013年10期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>丁明 王冬君 韩平平 贺敬 胡腾华</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《风力发电传动系统通用化建模方法研究》</div>
+
+</td>
+</tr>
+<tr id="local43" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《风力发电传动系统通用化建模方法研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>丁明 王冬君 韩平平 贺敬 胡腾华&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>合肥工业大学 教育部光伏系统工程研究中心,安徽省 合肥市,230009；中国电力科学研究院,北京市 海淀区,100192&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>18篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P2881—P2887&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>7页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM721&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TM9 TM3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">基金项目<b>：</b></font>国家重点基础研究发展计划项目(973项目)(2009CB219708)；高等学校博士学科点专项科研基金资助项目(20100111120018)；国家能源应用技术研究及工程示范项目(NY20110406-1)。@@@@The National Basic Research Program of China (973 Program)(2009CB219708)；Project Supported by Specialized Research Fund for the Doctoral Program of Higher Education(20100111120018)&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《电网技术》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2013年10期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊级别<b>：</b></font>ISTIC - PKU&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1000-3673&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电 通用模型 传动系统 仿真测试&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">44</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi44" style="display:block" class="baifenbihand" onclick="showobj('44')" >[详细↓]</div>
+<div id="shouqi44" style="display:none" class="baifenbihand" onclick="noneobj('44')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 山东科技大学 2007</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王传江</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《喷浆机器人滑模变结构控制器研究与设计》</div>
+
+</td>
+</tr>
+<tr id="local44" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《喷浆机器人滑模变结构控制器研究与设计》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王传江&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP242&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>苏学成&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>山东科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2007&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>喷浆机器人 滑模变结构控制器 数学模型 液压伺服系统 趋近律&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">45</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi45" style="display:block" class="baifenbihand" onclick="showobj('45')" >[详细↓]</div>
+<div id="shouqi45" style="display:none" class="baifenbihand" onclick="noneobj('45')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 大连理工大学 2005</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>张士军</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《硅片传输机器人的研制》</div>
+
+</td>
+</tr>
+<tr id="local45" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《硅片传输机器人的研制》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>张士军&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP242&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>机械设计及理论&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>金洙吉&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>大连理工大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2005&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>硅片传输机器人 运动学分析 动力学分析 控制系统&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">46</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi46" style="display:block" class="baifenbihand" onclick="showobj('46')" >[详细↓]</div>
+<div id="shouqi46" style="display:none" class="baifenbihand" onclick="noneobj('46')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 华中科技大学 2008</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>陈进</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《微机继电保护测试系统电流放大技术的研究》</div>
+
+</td>
+</tr>
+<tr id="local46" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《微机继电保护测试系统电流放大技术的研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>陈进&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP206.1&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>电气信息检测技术&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>徐垦&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>华中科技大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2008&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>电力系统 继电保护装置 微机保护 测试系统 电流放大 线路保护 励磁控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">47</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi47" style="display:block" class="baifenbihand" onclick="showobj('47')" >[详细↓]</div>
+<div id="shouqi47" style="display:none" class="baifenbihand" onclick="noneobj('47')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 天津大学 2006</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>游洲</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于FPGA的电动执行机构智能控制器研究》</div>
+
+</td>
+</tr>
+<tr id="local47" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于FPGA的电动执行机构智能控制器研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>游洲&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM571.61&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>控制理论与控制工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>硕士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>吴爱国&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>天津大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2006&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>现场可编程门阵列 工业控制 智能控制器 VHDL语言 控制算法&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">48</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi48" style="display:block" class="baifenbihand" onclick="showobj('48')" >[详细↓]</div>
+<div id="shouqi48" style="display:none" class="baifenbihand" onclick="noneobj('48')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学位论文 上海交通大学 2003</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>王有庆</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《基于内模滑模复合控制的直线电机高性能伺服控制研究》</div>
+
+</td>
+</tr>
+<tr id="local48" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学位论文&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《基于内模滑模复合控制的直线电机高性能伺服控制研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>王有庆&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TM301.2&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学科专业<b>：</b></font>材料加工工程&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">授予学位<b>：</b></font>博士&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">导师姓名<b>：</b></font>李从心&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位授予单位<b>：</b></font>上海交通大学&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">学位年度<b>：</b></font>2003&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>直线电机 内模滑模复合控制 模型参考自适应控制 线性二次型最优控制 广义预测控制 轮廓控制&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">49</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi49" style="display:block" class="baifenbihand" onclick="showobj('49')" >[详细↓]</div>
+<div id="shouqi49" style="display:none" class="baifenbihand" onclick="noneobj('49')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《海淀走读大学学报》 2004年1期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>齐剑玲 曾玉红 刘慧芳</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《PID调节器的仿真研究》</div>
+
+</td>
+</tr>
+<tr id="local49" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《PID调节器的仿真研究》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>齐剑玲 曾玉红 刘慧芳&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>中国地质大学,北京,100083；北京城市学院,北京,100083&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>6次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P69—P71&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>3页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TP21&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>U46 TP3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《海淀走读大学学报》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2004年1期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1673-4513&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>PID调节器 MATLAB仿真&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">50</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font>&nbsp;</div>
+<div id="xiangxi50" style="display:block" class="baifenbihand" onclick="showobj('50')" >[详细↓]</div>
+<div id="shouqi50" style="display:none" class="baifenbihand" onclick="noneobj('50')" >[收起↑]</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>学术期刊 《现代机械》 2010年1期</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">作者：</font>缑春芳</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">篇名：</font>《风力发电机组传动系统建模分析及齿轮的模态分析》</div>
+
+</td>
+</tr>
+<tr id="local50" style="display:none">
+<td align="left" width="100%">
+<div class="shubuno"></div><font color="#666666">来源<b>：</b></font>学术期刊&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">篇名<b>：</b></font>《风力发电机组传动系统建模分析及齿轮的模态分析》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者<b>：</b></font>缑春芳&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">作者单位<b>：</b></font>兰州交通大学,机电工程学院,甘肃,兰州,730070&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">参考文献<b>：</b></font>5篇&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">被引次数<b>：</b></font>3次（统计时间：2015年8月）&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页码<b>：</b></font>P22—P23&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">页数<b>：</b></font>2页&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">分类号<b>：</b></font>TH132.425&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">机标分类号<b>：</b></font>TP8 TP3&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">期刊名称<b>：</b></font>《现代机械》&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">出版时间<b>：</b></font>2010年1期&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">ISSN<b>：</b></font>1002-6886&nbsp;&nbsp;&nbsp;&nbsp;<br><div class="shubuno"></div><font color="#666666">关键词<b>：</b></font>风力发电机 传动系统 建模 模态分析&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+</td>
+</tr>
+
+<tr><td align="left" width="100%"><font color="#666666">……</font></td></tr><tr>
+
+</table>
+
+<table width="100%" cellpadding="1" cellspacing="2" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" width="100%">
+<font color="#666666"><b>互联网相似资源</b></font>
+</td>
+</tr>
+<tr>
+<td align="left" width="100%">
+<div class="shubu">1</div>
+<div class="xiangsigif"><img src="../images/10.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >10</span></span><font color="#666666">%</font></div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>互联网</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">标题<b>:</b></font>《滑模控制 - 搜狗百科》</div>
+<div class="baifenbi"><img src="../images/htm.gif">&nbsp;</div>
+<div class="baifenbi"><a target='_blank' href=http://baike.sogou.com/v8652318.htm>查看网页</a></div>
+</td>
+</tr>
+<tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">2</div>
+<div class="xiangsigif"><img src="../images/4.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >4</span></span><font color="#666666">%</font></div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>互联网</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">标题<b>:</b></font>《PID控制器 - 维基百科,自由的百科全书_百度文库》</div>
+<div class="baifenbi"><img src="../images/htm.gif">&nbsp;</div>
+<div class="baifenbi"><a target='_blank' href=http://wenku.baidu.com/view/a4ac6e0dd4d8d15abf234e3e.html>查看网页</a></div>
+</td>
+</tr>
+<tr>
+
+<tr>
+<td align="left" width="100%">
+<div class="shubu">3</div>
+<div class="xiangsigif"><img src="../images/1.gif"></div>
+<div class="baifenbi"><span  class='orange' ><span  class='green' >1</span></span><font color="#666666">%</font></div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">来源：</font>互联网</div>
+<div class="baifenbi">&nbsp;&nbsp;<font color="#666666">标题<b>:</b></font>《基于半张量理论的电力系统稳定域边界逼近二应用》</div>
+<div class="baifenbi"><img src="../images/htm.gif">&nbsp;</div>
+<div class="baifenbi"><a target='_blank' href=http://www.docin.com/p-1278069750.html>查看网页</a></div>
+</td>
+</tr>
+<tr>
+
+
+</table>
+
+<table width="100%" cellpadding="3" cellspacing="3" style="margin-bottom:15px;border: 1px solid #C0C0C0" bordercolorlight="#FFFFFF" bordercolordark="#FFFFFF" >
+<tr>
+<td align="left" colspan="2">
+<b>
+<font color="#666666">如何识别假冒的检测报告？</font></b></td>
+</tr>
+<tr>
+<td align="left" colspan="2">
+<font color="#666666">
+一：比对库只有网络资源的均为假货，正品检测报告都是经过大数据量的本地库
+（9000万篇学术期刊和学位论文）详细比对生成，检测结果有详细的期刊和学位论文出处。假的检测报告用网络比对结果坑害消费者，导致其论文最终没有通过审核。<br><br>
+
+
+二：不支持官网真伪验证（<a href="http://www.paperpass.com/check" target="_blank">http://www.paperpass.com/check</a>）的均为假货。<br><br>
+
+
+四：请认准PaperPass这个名称，有的假冒检测报告用以Paper开头的其他名称迷惑消费者。<br><br>
+
+真诚希望您能够将此信息转告您的朋友和同学，以防被骗！
+</font></td>
+</tr>
+</table>
+
+
+<div style="margin-bottom:100px"></div>
+<div class="zhengwencenter">
+<p>
+检测报告由<a href="http://www.paperpass.com/" target="_blank">PaperPass</a>文献相似度检测系统生成
+</p>
+<p>
+Copyright © 2007-2015 PaperPass
+</p>
+</div>
+<div style="margin-bottom:400px"></div>
+</body>
+</html>
